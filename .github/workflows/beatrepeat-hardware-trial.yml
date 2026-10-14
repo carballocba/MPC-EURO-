@@ -1,0 +1,62 @@
+name: BeatRepeat hardware trial package
+
+# Push works on this development branch; no default-branch change or release.
+on:
+  push:
+    branches: [dev/beatrepeat-armv7-proof]
+
+permissions:
+  contents: read
+
+jobs:
+  verified-package:
+    if: github.repository == 'carballocba/MPC-EURO-'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Check out the exact preparation commit
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Install pinned build tools into ignored workspace directories
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m venv build/venv
+          build/venv/bin/python -m pip install -r tools/python-requirements.txt
+          build/venv/bin/python -m pip install --require-hashes --no-deps --target build/toolchain -r tools/zig-requirements.txt
+          echo "$PWD/build/venv/bin" >> "$GITHUB_PATH"
+      - name: Native, sanitizer, GUI and ARMv7 validation
+        run: python3 tools/capture_validation.py
+      - name: Check the unchanged implementation and generated assets
+        run: python3 tools/verify_proof.py
+      - name: Generate and inspect the manual hardware trial ZIP
+        run: make package
+      - name: Require a clean source tree and exact package commit
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          m=json.loads(Path('build/package/MPC-EURO - VST - BeatRepeat/manifest.json').read_text())
+          assert m['source_commit']==os.environ['GITHUB_SHA']
+          assert m['working_tree_dirty'] is False
+          assert not subprocess.check_output(['git','status','--porcelain'])
+          PY
+      - name: Upload verified trial package and validation evidence
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: BeatRepeat-ARMv7-trial-${{ github.sha }}
+          path: |
+            build/package/MPC-EURO-BeatRepeat-armv7-proof.zip
+            build/package/MPC-EURO-BeatRepeat-armv7-proof.zip.sha256
+            build/validation/
+            build/arm/validation.json
+            build/arm/readelf.txt
+          if-no-files-found: error
+          retention-days: 30
+      - name: Explain the hardware approval boundary
+        run: |
+          echo 'Verified experimental manual trial ZIP. Download from the Artifacts section of this successful run.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Includes matching source, GUI/Q-Links, license notices, checksums, INSTALL.md and ROLLBACK.md. No installer, device access or release.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Hakai 3.9.1 operation remains unverified. Registration needs separately approved device changes after read-only preflight.' >> "$GITHUB_STEP_SUMMARY"

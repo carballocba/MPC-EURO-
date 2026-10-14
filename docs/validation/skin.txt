@@ -1,0 +1,4 @@
+python3 tools/build_skin.py
+Skin: /workspace/MPC-EURO-/build/skin/MPC-EURO - VST - BeatRepeat (community geometry/overlap checks passed)
+python3 tests/test_skin.py
+PASS 8 skin checks: geometry, touch actions, assets, 8 bindings, Q-Links, read-only status, metadata, real plugin actions

@@ -1,0 +1,15 @@
+cc -std=c11 -Wall -Wextra -Werror -Ibuild -Isrc -Itests -ffp-contract=off -O1 -g -fsanitize=address,undefined -fno-omit-frame-pointer -fno-pie -no-pie src/plugin.c src/repeat.c tests/test.c -Wl,--wrap=malloc -Wl,--wrap=calloc -Wl,--wrap=realloc -Wl,--wrap=free -Wl,--wrap=pthread_mutex_lock -Wl,--wrap=pthread_mutex_trylock -Wl,--wrap=pthread_mutex_unlock -Wl,--wrap=pthread_join -Wl,--wrap=open -Wl,--wrap=fopen -Wl,--wrap=read -Wl,--wrap=write -lm -pthread -o build/test-sanitize
+ASAN_OPTIONS=detect_leaks=1:halt_on_error=1 UBSAN_OPTIONS=halt_on_error=1 ./build/test-sanitize
+PASS bit-exact original DSP oracle (normal capture/repeat/release)
+PASS crossing expiry/wrap, zero history and widened 96k indices
+PASS silence / impulses / no crossings do not invent a loop
+PASS float stereo dry / mono centered wet / audible repeat / release
+PASS gain endpoints, smooth automation and unity bypass
+PASS invalid parameters/input, 16-96k, arbitrary buffers, bad-rate dry fallback
+PASS versioned scalar recall; gates/history omitted; 48 corruption checks
+PASS 450ms Punch/cancel/auto release and off-audio GUI notifications
+PASS concurrent automation + 640000 samples + 40 init/destruct cycles
+PASS in-place stereo, null scanner buffers, suspend and zero frames
+PASS 100Hz gate-switch discontinuities bounded; independent histories
+PASS zero wrapped RT allocation/mutex/file/join/host-callback violations
+PASS 12 native cases; realtime guard violations: 0

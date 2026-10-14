@@ -1,0 +1,24 @@
+{
+  "implementation_commit": "60f2b25502a25d619c99c04d07ac503cc452828f",
+  "arm_sha256": "8cfbcc08935cb2f57208e57d8ff81c8a7d4259e4af93b99c6233302800139104",
+  "skin": {
+    "Plugin Skins/Q-Links - 8by1.json": "fea9bfd1779229e503212fb7d574583169d7ea0e767fa701b52b8a79a08e96b7",
+    "Plugin Skins/Q-Links.json": "fea9bfd1779229e503212fb7d574583169d7ea0e767fa701b52b8a79a08e96b7",
+    "Plugin Skins/TUI.json": "6f7005f3ec5db10a437cd3760bce35689c1d800e544da3889a4f6c89bef050ea",
+    "Plugin Skins/sh_bg_0.png": "3af9aed385c588a80b87cad1a79f7d763d03fda8be3261a8319e9ebf6f1005aa",
+    "Plugin Skins/sh_btn_punch_PUNCH_450MS_PUNCH___CANCEL_off.png": "a2bd09aec8e4a440b98b93c44ff9aae14de02fc2f0ae55168ef5804dd588e14c",
+    "Plugin Skins/sh_btn_punch_PUNCH_450MS_PUNCH___CANCEL_on.png": "510e94e3749dbf2f6eb997b6e51f5da727ceeefc6739b7b91de8e3c8943d5de8",
+    "Plugin Skins/sh_knob_r42.png": "ed3385052b12fa8cd3e07149969fd90c0c94c57be41ea9d4ec37b8b05a347e2c",
+    "Plugin Skins/sh_mode_0_0.png": "0686a64895e4a80b1c4f775299f26ff1236e033b8c141cb6cbf001ae82a5c920",
+    "Plugin Skins/sh_mode_0_1.png": "128152c755c7f071e0092fa69b45574cffa103db46139ccb9d83356bd146710a",
+    "Plugin Skins/sh_seg_bypass_0_off.png": "128b1ffdbb1bd199ae262a9b158b8fb059118478eee2edf90d79c453f33c258f",
+    "Plugin Skins/sh_seg_bypass_0_on.png": "7d69063922e6b968dfa1009aaf6885ecc8e458658a931b857d75ec5dac91ff89",
+    "Plugin Skins/sh_seg_bypass_1_off.png": "9913fa8f06aa4698fc6068104d73600ffefafffa8b94ba5940eef3e2eb351ab1",
+    "Plugin Skins/sh_seg_bypass_1_on.png": "d07a8d68e8294d5254121f5edeb78b4ba507b2f5d1947449d4bf249f897747ee",
+    "Plugin Skins/sh_seg_gate_0_off.png": "ebf1c83efe497162ea123edfb54f014ad8d2909a884d37dc26de7cec9dc142ea",
+    "Plugin Skins/sh_seg_gate_0_on.png": "4a032873725fdbb075ac0280af340b8e8f9a2fa72adda0fe09e82f5753c5380c",
+    "Plugin Skins/sh_seg_gate_1_off.png": "a6d6787ff9d7a09ca7704c8b47cb2958f36d969df9d2becce5ddac43cbbe2614",
+    "Plugin Skins/sh_seg_gate_1_on.png": "a1c35ca5aebbed8fc7870c15731daf757b2a890f20e2533fbef2535be8e5c5dc",
+    "version.xml": "c673456f52bf008881739f2cb2769cd6c7a8ee3a1e4dd59189661462ff970ac1"
+  }
+}
