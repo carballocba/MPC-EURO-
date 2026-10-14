@@ -27,3 +27,5 @@ make package
 Native builds need a C11 compiler, make, Python and Pillow. The ARM build uses the hash-pinned open-source Zig 0.13.0 toolchain; see the build guide before running these commands. Generated binaries and packages stay in ignored `build/`. No proprietary VST2 SDK, Daisy, CMSIS, RP2040 SDK or hardware firmware is required.
 
 The DSP adaptation and new project code/art are GPL-3.0-only. Vendored MIT code, font and runtime notices retain their terms. Source publication is authorized for this proof; **final binary distribution rights must be reviewed separately**, as required by the approved scope. This project is independent of MPC-PD-LAB and does not alter other plugins or the research PRs.
+
+Hardware trial preparation: [download/install guide](docs/INSTALL.md), [Hakai evidence and required confirmations](docs/HAKAI_INSTALLATION_COMPATIBILITY.md), [musical trial](docs/HARDWARE_TRIAL_GUIDE.md) and [rollback](docs/ROLLBACK.md). The development-branch Actions workflow publishes only a verified, temporary artifact, not a GitHub release. It is a manual payload; device registration remains separately approved.

@@ -51,12 +51,12 @@ The first command stops on any failed native/sanitizer/skin/ARM check and keeps 
 build/package/
   MPC-EURO - VST - BeatRepeat/
     beatrepeat.so
-    version.xml
+    version.xml, plugin-meta.xml
     Plugin Skins/  (TUI.json, Q-Links.json, original PNGs)
     manifest.json
     LICENSE, NOTICE.md, LICENSES/, SHA256SUMS
   MPC-EURO-beatrepeat-source.zip
-  pluginlist-entry.xml
+  pluginlist-entry.xml, INSTALL.md, ROLLBACK.md, SHA256SUMS
   documentation/
   MPC-EURO-BeatRepeat-armv7-proof.zip
 ```
@@ -64,3 +64,5 @@ build/package/
 The UID is `45754272` / EuBr, native identifier MPC-EURO.vst.beatrepeat, independent directory MPC-EURO - VST - BeatRepeat. The inspect-only XML entry follows the community `/sdcard/Synths/.../beatrepeat.so` effect convention. Its placement/path/scanning behavior on this MPC still needs approval and device validation. **No script installs files, edits plugin lists/MPC.settings or overwrites another plugin.** A separately approved installation can use Hakai's existing community workflow once its exact registration behavior is verified.
 
 Packages include source and notices, not a release or installer. ZIP entries are ordered, use fixed 1980 timestamps and fixed modes. Repeating builds of unchanged source with the pinned tools is expected to be byte-identical and is checked during this proof; source commit/dirty metadata legitimately changes the package if the checkout state changes. Dependencies and generated binaries stay out of git. For clean-checkout reproduction, check out the recorded implementation commit, install the pinned prerequisites, run the check capture, then make package.
+
+The hardware-trial workflow runs every required check, rejects DSP/ABI/UI drift from implementation commit 60f2b25, and uploads the ZIP, its SHA256 sidecar and validation evidence for 30 days. The source archive includes that workflow. See INSTALL.md: this is a manual native-folder package, **not** the community app's canonical installer ZIP. Portable plugin-meta.xml supports a confirmed content location without assuming /sdcard/Synths; actual targeted registration modifies the host settings and requires separate approval. The package includes no installer.
