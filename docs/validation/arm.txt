@@ -1,0 +1,2 @@
+tools/build_arm.sh
+PASS ARM ELF/ABI/export/dependency validation: {"architecture": "ELF32 little-endian ARMv7 hard-float", "exports": ["VSTPluginMain"], "dependencies": ["libm.so.6", "libpthread.so.0", "libc.so.6"], "highest_glibc": "2.27", "target_glibc_ceiling": "2.31", "cpu": "ARMv7-A / Cortex-A9 code generation, VFPv3 + NEON", "object_vfp_register_calling_convention": true, "linked_vfp_args_tag_present": false, "physical_mpc_tested": false, "qemu_runtime_tested": false}

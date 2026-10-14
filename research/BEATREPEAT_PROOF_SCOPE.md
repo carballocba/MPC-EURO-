@@ -22,4 +22,4 @@ No MPC access, installer execution, `MPC.settings` edits, host registration, phy
 
 ## Current status
 
-Scope documented. DSP adaptation, builds, tests and draft PR are **not yet completed**.
+DSP adaptation, SDK-free wrapper, functional native skin/Q-Links, native/sanitizer tests and ARMv7 cross-build are completed for an experimental proof. See [validation](../docs/VALIDATION.md) and [hardware test plan](../docs/HARDWARE_TEST_PLAN.md). Device compatibility and final binary-distribution review remain open; no MPC installation or release has occurred. The implementation is submitted for draft-PR review.

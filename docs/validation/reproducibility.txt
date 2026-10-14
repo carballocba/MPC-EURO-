@@ -1,0 +1,11 @@
+Clean source-archive extraction to /tmp/mpc-beatrepeat-reproduce/MPC-EURO-beatrepeat
+Command: ZIG_BIN=/tmp/mpc-beatrepeat-zig/ziglang/zig make native arm skin
+PASS ARM library matches the development workspace byte for byte:
+8cfbcc08935cb2f57208e57d8ff81c8a7d4259e4af93b99c6233302800139104
+PASS native library matches byte for byte:
+43f4db54a2629703add417095a8ac1d01a7cbb59b739524c79327348fb4d20a9
+PASS all exported native skin files match byte for byte.
+PASS package generation twice with unchanged source/check-out metadata was byte-identical.
+PASS actual delivery archive checksums, identities, isolated paths, exact ARM binary and matching source.
+Package/source hashes legitimately change when documentation or commit/dirty metadata changes.
+No ARM runtime, QEMU or physical MPC test occurred.
