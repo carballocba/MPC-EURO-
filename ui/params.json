@@ -1,0 +1,598 @@
+[
+  {
+    "key": "length",
+    "name": "Length",
+    "min": 5,
+    "max": 450,
+    "default": 100,
+    "unit": "ms",
+    "saved": true
+  },
+  {
+    "key": "gate",
+    "name": "Gate",
+    "min": 0,
+    "max": 1,
+    "default": 0,
+    "options": [
+      "OFF",
+      "ON"
+    ],
+    "saved": false
+  },
+  {
+    "key": "mix",
+    "name": "Dry/Wet",
+    "min": 0,
+    "max": 100,
+    "default": 100,
+    "unit": "%",
+    "saved": true
+  },
+  {
+    "key": "gain",
+    "name": "Output",
+    "min": -24,
+    "max": 12,
+    "default": 0,
+    "unit": "dB",
+    "saved": true
+  },
+  {
+    "key": "punch",
+    "name": "Punch",
+    "min": 0,
+    "max": 1,
+    "default": 0,
+    "options": [
+      "READY",
+      "PUNCH"
+    ],
+    "saved": false
+  },
+  {
+    "key": "bypass",
+    "name": "Bypass",
+    "min": 0,
+    "max": 1,
+    "default": 0,
+    "options": [
+      "OFF",
+      "ON"
+    ],
+    "saved": true
+  },
+  {
+    "key": "active",
+    "name": "Active",
+    "min": 0,
+    "max": 1,
+    "default": 0,
+    "options": [
+      "CAPTURE",
+      "REPEAT"
+    ],
+    "saved": false,
+    "readonly": true
+  },
+  {
+    "key": "status",
+    "name": "Status",
+    "min": 0,
+    "max": 4,
+    "default": 0,
+    "options": [
+      "CAPTURE",
+      "REPEAT",
+      "PRIMING",
+      "BYPASS",
+      "RATE!"
+    ],
+    "saved": false,
+    "readonly": true
+  },
+  {
+    "key": "mix_live",
+    "name": "Dry/Wet",
+    "min": 0,
+    "max": 100,
+    "default": 100,
+    "unit": "%",
+    "saved": false
+  },
+  {
+    "key": "break",
+    "name": "Break",
+    "min": 0,
+    "max": 100,
+    "default": 0,
+    "unit": "%",
+    "saved": true
+  },
+  {
+    "key": "capture",
+    "name": "Capture",
+    "min": 0,
+    "max": 1,
+    "default": 0,
+    "unit": "",
+    "saved": false,
+    "options": [
+      "READY",
+      "CAPTURE"
+    ]
+  },
+  {
+    "key": "freeze",
+    "name": "Freeze",
+    "min": 0,
+    "max": 1,
+    "default": 0,
+    "unit": "",
+    "saved": false,
+    "options": [
+      "LIVE",
+      "FROZEN"
+    ]
+  },
+  {
+    "key": "position",
+    "name": "Pos",
+    "min": 0,
+    "max": 100,
+    "default": 0,
+    "unit": "%",
+    "saved": true
+  },
+  {
+    "key": "buffer",
+    "name": "Buffer",
+    "min": 50,
+    "max": 2000,
+    "default": 1000,
+    "unit": "ms",
+    "saved": true
+  },
+  {
+    "key": "reverse",
+    "name": "Reverse",
+    "min": 0,
+    "max": 1,
+    "default": 0,
+    "unit": "",
+    "saved": true,
+    "options": [
+      "OFF",
+      "ON"
+    ]
+  },
+  {
+    "key": "bend",
+    "name": "Bend",
+    "min": -24,
+    "max": 24,
+    "default": 0,
+    "unit": "st",
+    "saved": true
+  },
+  {
+    "key": "pitch",
+    "name": "Pitch",
+    "min": -12,
+    "max": 12,
+    "default": 0,
+    "unit": "st",
+    "saved": true
+  },
+  {
+    "key": "corrupt",
+    "name": "Corrupt",
+    "min": 0,
+    "max": 100,
+    "default": 0,
+    "unit": "%",
+    "saved": true
+  },
+  {
+    "key": "chance",
+    "name": "Chance",
+    "min": 0,
+    "max": 100,
+    "default": 100,
+    "unit": "%",
+    "saved": true
+  },
+  {
+    "key": "density",
+    "name": "Density",
+    "min": 0,
+    "max": 100,
+    "default": 25,
+    "unit": "%",
+    "saved": true
+  },
+  {
+    "key": "mutation",
+    "name": "Mutate",
+    "min": 0,
+    "max": 100,
+    "default": 0,
+    "unit": "%",
+    "saved": true
+  },
+  {
+    "key": "state",
+    "name": "State",
+    "min": 0,
+    "max": 7,
+    "default": 0,
+    "unit": "",
+    "saved": true,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ]
+  },
+  {
+    "key": "seq_run",
+    "name": "Seq Run",
+    "min": 0,
+    "max": 1,
+    "default": 0,
+    "unit": "",
+    "saved": false,
+    "options": [
+      "STOP",
+      "RUN"
+    ]
+  },
+  {
+    "key": "state_div",
+    "name": "StepDiv",
+    "min": 0,
+    "max": 10,
+    "default": 0,
+    "unit": "",
+    "saved": true,
+    "options": [
+      "1/4",
+      "1/8",
+      "1/16",
+      "1/32",
+      "1/64",
+      "1/8T",
+      "1/16T",
+      "1/32T",
+      "1/8D",
+      "1/16D",
+      "1/32D"
+    ]
+  },
+  {
+    "key": "timing",
+    "name": "Apply",
+    "min": 0,
+    "max": 1,
+    "default": 0,
+    "unit": "",
+    "saved": true,
+    "options": [
+      "INSTANT",
+      "QUANT"
+    ]
+  },
+  {
+    "key": "time_mode",
+    "name": "Time",
+    "min": 0,
+    "max": 1,
+    "default": 0,
+    "unit": "",
+    "saved": true,
+    "options": [
+      "MS",
+      "GRID"
+    ]
+  },
+  {
+    "key": "grid",
+    "name": "Grid",
+    "min": 0,
+    "max": 10,
+    "default": 2,
+    "unit": "",
+    "saved": true,
+    "options": [
+      "1/4",
+      "1/8",
+      "1/16",
+      "1/32",
+      "1/64",
+      "1/8T",
+      "1/16T",
+      "1/32T",
+      "1/8D",
+      "1/16D",
+      "1/32D"
+    ]
+  },
+  {
+    "key": "gate_mode",
+    "name": "GateMod",
+    "min": 0,
+    "max": 1,
+    "default": 0,
+    "unit": "",
+    "saved": true,
+    "options": [
+      "LATCH",
+      "HOLD"
+    ]
+  },
+  {
+    "key": "drive",
+    "name": "Drive",
+    "min": 0,
+    "max": 100,
+    "default": 0,
+    "unit": "%",
+    "saved": true
+  },
+  {
+    "key": "smooth",
+    "name": "Smooth",
+    "min": 0.5,
+    "max": 20,
+    "default": 2,
+    "unit": "ms",
+    "saved": true
+  },
+  {
+    "key": "midi_channel",
+    "name": "MIDI Ch",
+    "min": 1,
+    "max": 16,
+    "default": 1,
+    "unit": "",
+    "saved": true
+  },
+  {
+    "key": "midi_enable",
+    "name": "MIDI",
+    "min": 0,
+    "max": 1,
+    "default": 1,
+    "unit": "",
+    "saved": true,
+    "options": [
+      "OFF",
+      "ON"
+    ]
+  },
+  {
+    "key": "sync",
+    "name": "Sync",
+    "min": 0,
+    "max": 1,
+    "default": 1,
+    "unit": "",
+    "saved": true,
+    "options": [
+      "INT",
+      "HOST"
+    ]
+  },
+  {
+    "key": "tempo",
+    "name": "Tempo",
+    "min": 40,
+    "max": 240,
+    "default": 120,
+    "unit": "BPM",
+    "saved": true
+  },
+  {
+    "key": "seed",
+    "name": "Seed",
+    "min": 1,
+    "max": 65535,
+    "default": 1,
+    "unit": "",
+    "saved": true
+  },
+  {
+    "key": "seq_mode",
+    "name": "Order",
+    "min": 0,
+    "max": 1,
+    "default": 0,
+    "unit": "",
+    "saved": true,
+    "options": [
+      "FORWARD",
+      "RANDOM"
+    ]
+  },
+  {
+    "key": "store_state",
+    "name": "Store",
+    "min": 0,
+    "max": 1,
+    "default": 0,
+    "unit": "",
+    "saved": false,
+    "options": [
+      "READY",
+      "STORE"
+    ]
+  },
+  {
+    "key": "state_prob",
+    "name": "Prob",
+    "min": 0,
+    "max": 100,
+    "default": 100,
+    "unit": "%",
+    "saved": true
+  },
+  {
+    "key": "state_duration",
+    "name": "StepDiv",
+    "min": 0,
+    "max": 10,
+    "default": 0,
+    "unit": "",
+    "saved": true,
+    "options": [
+      "1/4",
+      "1/8",
+      "1/16",
+      "1/32",
+      "1/64",
+      "1/8T",
+      "1/16T",
+      "1/32T",
+      "1/8D",
+      "1/16D",
+      "1/32D"
+    ]
+  },
+  {
+    "key": "state_enable",
+    "name": "Step",
+    "min": 0,
+    "max": 1,
+    "default": 1,
+    "unit": "",
+    "saved": true,
+    "options": [
+      "SKIP",
+      "ACTIVE"
+    ]
+  },
+  {
+    "key": "buffer_state",
+    "name": "Buffer",
+    "min": 0,
+    "max": 3,
+    "default": 0,
+    "unit": "",
+    "saved": false,
+    "readonly": true,
+    "options": [
+      "LIVE",
+      "TAKE",
+      "REPEAT",
+      "FROZEN"
+    ]
+  },
+  {
+    "key": "playhead",
+    "name": "Pos",
+    "min": 0,
+    "max": 100,
+    "default": 0,
+    "unit": "%",
+    "saved": false,
+    "readonly": true
+  },
+  {
+    "key": "length_read",
+    "name": "Length",
+    "min": 0,
+    "max": 2000,
+    "default": 0,
+    "unit": "ms",
+    "saved": false,
+    "readonly": true
+  },
+  {
+    "key": "seq_step",
+    "name": "Playing",
+    "min": 0,
+    "max": 7,
+    "default": 0,
+    "unit": "",
+    "saved": false,
+    "readonly": true,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ]
+  },
+  {
+    "key": "clock_status",
+    "name": "Clock",
+    "min": 0,
+    "max": 1,
+    "default": 0,
+    "unit": "",
+    "saved": false,
+    "readonly": true,
+    "options": [
+      "INT",
+      "HOST"
+    ]
+  },
+  {
+    "key": "activity",
+    "name": "Level",
+    "min": 0,
+    "max": 100,
+    "default": 0,
+    "unit": "%",
+    "saved": false,
+    "readonly": true
+  },
+  {
+    "key": "freeze_mode",
+    "name": "FrzMode",
+    "min": 0,
+    "max": 1,
+    "default": 0,
+    "unit": "",
+    "saved": true,
+    "options": [
+      "LATCH",
+      "HOLD"
+    ]
+  },
+  {
+    "key": "apply_state",
+    "name": "Recall",
+    "min": 0,
+    "max": 1,
+    "default": 0,
+    "unit": "",
+    "saved": false,
+    "options": [
+      "READY",
+      "RECALL"
+    ]
+  },
+  {
+    "key": "legacy",
+    "name": "Engine",
+    "min": 0,
+    "max": 1,
+    "default": 0,
+    "unit": "",
+    "saved": true,
+    "options": [
+      "STEREO",
+      "LEGACY"
+    ]
+  }
+]

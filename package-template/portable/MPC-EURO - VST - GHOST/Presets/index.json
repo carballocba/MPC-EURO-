@@ -1,0 +1,82 @@
+[
+  {
+    "program": 0,
+    "name": "Classic Repeat",
+    "sha256": "d42be2c4e50051a5fbaccc0008c209915573afd5ecd101b3595d72d5031bf0e2"
+  },
+  {
+    "program": 1,
+    "name": "Micro Stutter",
+    "sha256": "0f5ddda77c99222d45a46a49de2ca053f9d47fcdba1026398617d3371b4b484b"
+  },
+  {
+    "program": 2,
+    "name": "Broken Tape",
+    "sha256": "71f0b2f314bdeff160e601ba9570d5245d747f735a57d125da70ae32d9f51d0d"
+  },
+  {
+    "program": 3,
+    "name": "Digital Decay",
+    "sha256": "7574a75bd3df965fac116785b3c68eb49cdcbf4fdbcdc02ba61ccc8845cd8bf4"
+  },
+  {
+    "program": 4,
+    "name": "Random Cuts",
+    "sha256": "20748a2d8a817f2af288401a259a056b944b1a17219c9dd195dc21896d43fcf7"
+  },
+  {
+    "program": 5,
+    "name": "Frozen Rhodes",
+    "sha256": "330bf2561b90317c4a711eb8fcf118339fe883fc0c456017e7685b119568624e"
+  },
+  {
+    "program": 6,
+    "name": "Glitch Percussion",
+    "sha256": "fd3d80bbe7495042525d653c7562a8ffd99474c107ac9f8be6af0cd8d8188fc9"
+  },
+  {
+    "program": 7,
+    "name": "Controlled Chaos",
+    "sha256": "8e7fee4437f9578fd52c336acafa9f276fde729682513a6f09b45ecd0bae3a09"
+  },
+  {
+    "program": 8,
+    "name": "Ghost Scatter",
+    "sha256": "ba98631f4984fbbb1ca961c655fb116aa20c8193ecd34e212f498d8ae3b4182e"
+  },
+  {
+    "program": 9,
+    "name": "Dust and Gaps",
+    "sha256": "70fe5a4a41d186dd0de76139b562894f38d1c2836b443b42e5a1731979bde93e"
+  },
+  {
+    "program": 10,
+    "name": "Breathing Tape",
+    "sha256": "3fa13ac9510f48b58a403e3b6dcd2612e1b06516787d8ed70c6328fed9c418a3"
+  },
+  {
+    "program": 11,
+    "name": "Buffer Drift",
+    "sha256": "a5dac1afc5d56b7bec27390b2161806889c4c9001eb376835d259a60c1d4428d"
+  },
+  {
+    "program": 12,
+    "name": "Percussive Listen",
+    "sha256": "94a0a1f1f56ca836475c073e14bcf4a499d694b6d6ad71d3f4beb93770504881"
+  },
+  {
+    "program": 13,
+    "name": "Chaos Cuts",
+    "sha256": "89c7b30d76a8dd07ff82dfd22403098e5cfea20873278d9b5fb8b4d4326c32ce"
+  },
+  {
+    "program": 14,
+    "name": "Pitch Mutations",
+    "sha256": "6f1049ad43d0bf6b9310c484fc82141162a9ff5832b19a13932a61143f842fcc"
+  },
+  {
+    "program": 15,
+    "name": "Live Canvas",
+    "sha256": "2abe15cb32724842e192fc239f04fb37fc39d45cb0326a19c070cd9ecdabc7ea"
+  }
+]

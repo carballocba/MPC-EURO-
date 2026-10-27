@@ -1,0 +1,19 @@
+{
+  "elf_bits": 32,
+  "machine": "ARM",
+  "hard_float": true,
+  "exports": [
+    "VSTPluginMain"
+  ],
+  "needed": [
+    "libc.so.6",
+    "libm.so.6",
+    "libpthread.so.0"
+  ],
+  "glibc": [
+    "GLIBC_2.27",
+    "GLIBC_2.4"
+  ],
+  "unchanged_binary": true,
+  "executed_on_arm": false
+}

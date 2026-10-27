@@ -1,0 +1,70 @@
+[tab PERFORM]
+text cx=370 cy=115 label="GHOST / PERFORM" size=1.7 color=e9edf1
+text cx=220 cy=162 label="Q-LINK BANK 1 / 4 · CORE" size=1.5 color=65dbc6 banks="01 / CORE"
+text cx=220 cy=162 label="Q-LINK BANK 2 / 4 · REPEAT" size=1.5 color=65dbc6 banks="02 / REPEAT"
+text cx=220 cy=162 label="Q-LINK BANK 3 / 4 · ENGINE" size=1.5 color=65dbc6 banks="03 / ENGINE"
+text cx=220 cy=162 label="Q-LINK BANK 4 / 4 · ACTION" size=1.5 color=65dbc6 banks="04 / ACTION"
+text cx=150 cy=188 label="DENSITY" size=1.2 color=8899a8 banks="01 / CORE"
+readout cx=150 cy=218 w=160 h=32 key=g_density banks="01 / CORE" tsize=22
+text cx=355 cy=188 label="CHAOS AMOUNT" size=1.2 color=8899a8 banks="01 / CORE"
+readout cx=355 cy=218 w=160 h=32 key=g_chaos banks="01 / CORE" tsize=22
+text cx=560 cy=188 label="MOTION DEPTH" size=1.2 color=8899a8 banks="01 / CORE"
+readout cx=560 cy=218 w=160 h=32 key=g_mdepth banks="01 / CORE" tsize=22
+text cx=765 cy=188 label="DRY / WET" size=1.2 color=8899a8 banks="01 / CORE"
+readout cx=765 cy=218 w=160 h=32 key=mix_live banks="01 / CORE" tsize=22
+text cx=150 cy=188 label="LENGTH" size=1.2 color=8899a8 banks="02 / REPEAT"
+readout cx=150 cy=218 w=160 h=32 key=length banks="02 / REPEAT" tsize=22
+text cx=355 cy=188 label="BREAK" size=1.2 color=8899a8 banks="02 / REPEAT"
+readout cx=355 cy=218 w=160 h=32 key=break banks="02 / REPEAT" tsize=22
+text cx=560 cy=188 label="CHANCE" size=1.2 color=8899a8 banks="02 / REPEAT"
+readout cx=560 cy=218 w=160 h=32 key=g_chance banks="02 / REPEAT" tsize=22
+text cx=765 cy=188 label="GHOST ENABLE" size=1.2 color=8899a8 banks="02 / REPEAT"
+readout cx=765 cy=218 w=160 h=32 key=g_ghost banks="02 / REPEAT" tsize=22
+text cx=150 cy=188 label="GATE" size=1.2 color=8899a8 banks="03 / ENGINE"
+readout cx=150 cy=218 w=160 h=32 key=gate banks="03 / ENGINE" tsize=22
+text cx=355 cy=188 label="MOTION ENABLE" size=1.2 color=8899a8 banks="03 / ENGINE"
+readout cx=355 cy=218 w=160 h=32 key=g_motion banks="03 / ENGINE" tsize=22
+text cx=560 cy=188 label="CHAOS ENABLE" size=1.2 color=8899a8 banks="03 / ENGINE"
+readout cx=560 cy=218 w=160 h=32 key=g_chaoson banks="03 / ENGINE" tsize=22
+text cx=765 cy=188 label="CAPTURE" size=1.2 color=8899a8 banks="03 / ENGINE"
+readout cx=765 cy=218 w=160 h=32 key=g_take banks="03 / ENGINE" tsize=22
+text cx=150 cy=188 label="FREEZE" size=1.2 color=8899a8 banks="04 / ACTION"
+readout cx=150 cy=218 w=160 h=32 key=freeze banks="04 / ACTION" tsize=22
+text cx=355 cy=188 label="BUFFER DICE" size=1.2 color=8899a8 banks="04 / ACTION"
+readout cx=355 cy=218 w=160 h=32 key=g_bufdice banks="04 / ACTION" tsize=22
+text cx=560 cy=188 label="MOTION DICE" size=1.2 color=8899a8 banks="04 / ACTION"
+readout cx=560 cy=218 w=160 h=32 key=g_motdice banks="04 / ACTION" tsize=22
+text cx=765 cy=188 label="CLEAN" size=1.2 color=8899a8 banks="04 / ACTION"
+readout cx=765 cy=218 w=160 h=32 key=g_clean banks="04 / ACTION" tsize=22
+text cx=350 cy=276 label="ENGINE STATE" size=1.2 color=8899a8
+readout cx=350 cy=309 w=210 h=40 key=g_status tsize=25
+text cx=590 cy=276 label="CAPTURED TAKE" size=1.2 color=8899a8
+readout cx=590 cy=309 w=210 h=40 key=g_take tsize=22
+text cx=815 cy=276 label="INPUT ENERGY" size=1.2 color=8899a8
+readout cx=815 cy=309 w=150 h=32 key=g_energy tsize=22
+knob cx=145 cy=416 r=40 bw=170 key=g_density ns=17 vs=24
+knob cx=350 cy=416 r=40 bw=170 key=g_chaos ns=17 vs=24
+knob cx=555 cy=416 r=40 bw=170 key=g_mdepth ns=17 vs=24
+knob cx=760 cy=416 r=40 bw=170 key=mix_live ns=17 vs=24
+slider_h cx=150 cy=550 w=205 h=18 key=length ns=17 vs=20
+slider_h cx=425 cy=550 w=205 h=18 key=break ns=17 vs=20
+slider_h cx=700 cy=550 w=205 h=18 key=g_chance ns=17 vs=20
+button cx=1055 cy=382 w=132 h=58 key=capture label="CAPTURE" label_on="CAPTURE" tsize=17
+enum_h cx=1195 cy=382 label="FREEZE" options="LIVE,HELD" sw=70 sh=56 key=freeze
+button cx=1055 cy=468 w=132 h=58 key=g_bufdice label="BUF DICE" label_on="BUF DICE" tsize=17
+button cx=1204 cy=468 w=132 h=58 key=g_motdice label="MOT DICE" label_on="MOT DICE" tsize=17
+button cx=1055 cy=548 w=132 h=58 key=punch label="PUNCH" label_on="CANCEL" tsize=17 banks="04 / ACTION"
+button cx=1204 cy=548 w=132 h=58 key=g_clean label="CLEAN" label_on="CLEAN" tsize=17 color=f5ac66
+text cx=150 cy=638 label="GATE" size=1.2 color=8899a8
+enum_h cx=150 cy=684 options="OFF,ON" sw=62 sh=56 key=gate
+text cx=355 cy=638 label="GHOST" size=1.2 color=8899a8
+enum_h cx=355 cy=684 options="OFF,ON" sw=62 sh=56 key=g_ghost
+text cx=560 cy=638 label="MOTION" size=1.2 color=8899a8
+enum_h cx=560 cy=684 options="OFF,ON" sw=62 sh=56 key=g_motion
+text cx=765 cy=638 label="CHAOS" size=1.2 color=f5ac66
+enum_h cx=765 cy=684 options="OFF,ON" sw=62 sh=56 key=g_chaoson
+text cx=1090 cy=638 label="CLEAN LATCHES · REARM GHOST OR MOTION" size=1.0 color=8899a8
+qlinks "01 / CORE" = g_density,g_chaos,g_mdepth,mix_live
+qlinks "02 / REPEAT" = length,break,g_chance,g_ghost
+qlinks "03 / ENGINE" = gate,g_motion,g_chaoson,capture
+qlinks "04 / ACTION" = freeze,g_bufdice,g_motdice,g_clean

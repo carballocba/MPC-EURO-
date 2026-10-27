@@ -1,0 +1,42 @@
+[
+  {
+    "state": "idle",
+    "sha256": "cdb61be8cdd736dd4e2e28c26b4c3acb0ad03de571a9d7b3a644768cb9535186",
+    "byte_identical": true
+  },
+  {
+    "state": "listen",
+    "sha256": "8ba1419ee1c6c9d775e430b079b5786478e0c1d214f5b86d92493828ce77d2cc",
+    "byte_identical": true
+  },
+  {
+    "state": "capture",
+    "sha256": "137b8e5412409323214536d8c3b7a385a58d4799339ca200096ec28922717735",
+    "byte_identical": true
+  },
+  {
+    "state": "repeat",
+    "sha256": "839e8b5b8ee100d8c2cb189d920923f705d013e4f644f8d9fdbc4ac0e73338ca",
+    "byte_identical": true
+  },
+  {
+    "state": "freeze",
+    "sha256": "01fdaa4bfa25996025b46b46706105a6ae269b2402991f3caacda6853ebea124",
+    "byte_identical": true
+  },
+  {
+    "state": "motion",
+    "sha256": "bf5778c2d612c5fd3fc7c87beda7c14944753c6f369b3edb9af933606f76675b",
+    "byte_identical": true
+  },
+  {
+    "state": "chaos",
+    "sha256": "3cfd22f560bb43f9b541ed4c7f60d21b46cc09478a9c817a342764e64fff4cc8",
+    "byte_identical": true
+  },
+  {
+    "state": "clean",
+    "sha256": "e83dd22fb919b1daceeefac941f6176a3233de4deca50c5d9a3e152883548cc5",
+    "byte_identical": true
+  }
+]

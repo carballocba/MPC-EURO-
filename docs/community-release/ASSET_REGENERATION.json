@@ -1,0 +1,16 @@
+{
+  "status": "BYTE-IDENTICAL",
+  "original_sha256": "45c6f5fa8999ccd1c8c1f0535e8c7665bba9c4fc2b3948f9c46650e4254f430c",
+  "regenerated_sha256": "45c6f5fa8999ccd1c8c1f0535e8c7665bba9c4fc2b3948f9c46650e4254f430c",
+  "generator": "vendor/mpc/tools/shadow_art.c",
+  "source_sha256": "b3341728ae0a0d80b349a54494b621d88cb232966017aae4077517cdd9b0345c",
+  "theme": "ui/layout.conf",
+  "theme_sha256": "16e4cdca700286f8ef5e9de3cdde3e74a23353ad070a281f2b44d239be1b9ddf",
+  "command": "theme|<SOURCE_ROOT>/ui/layout.conf\nstrip|<SOURCE_ROOT>/build/ghost-community-safe/sh_knob_r32.ppm|32|128|10151b\n",
+  "dimensions": [
+    74,
+    9472
+  ],
+  "terms": "MIT; sd88me2026; force-shadow MIT retained; no firmware or Akai asset input",
+  "device_access": false
+}

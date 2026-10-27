@@ -1,0 +1,157 @@
+id,vst_name,unit,automatable
+0,Length,ms,True
+1,Gate,,True
+2,Dry/Wet,%,True
+3,Output,dB,True
+4,Punch,,True
+5,Bypass,,True
+6,Active,,False
+7,Status,,False
+8,Dry/Wet,%,False
+9,Break,%,True
+10,Capture,,True
+11,Freeze,,True
+12,Pos,%,True
+13,Buffer,ms,True
+14,Reverse,,True
+15,Bend,st,True
+16,Pitch,st,True
+17,Corrupt,%,True
+18,Chance,%,True
+19,Density,%,True
+20,Mutate,%,True
+21,State,,True
+22,Seq Run,,True
+23,StepDiv,,True
+24,Apply,,True
+25,Time,,True
+26,Grid,,True
+27,GateMod,,True
+28,Drive,%,True
+29,Smooth,ms,True
+30,MIDI Ch,,True
+31,MIDI,,True
+32,Sync,,True
+33,Tempo,BPM,True
+34,Seed,,True
+35,Order,,True
+36,Store,,True
+37,Prob,%,True
+38,StepDiv,,True
+39,Step,,True
+40,Buffer,,False
+41,Pos,%,False
+42,Length,ms,False
+43,Playing,,False
+44,Clock,,False
+45,Level,%,False
+46,FrzMode,,True
+47,Recall,,True
+48,Engine,,True
+49,Ghost,,True
+50,Gate,,True
+51,Length,ms,True
+52,Break,%,True
+53,Mix,%,True
+54,Motion,,True
+55,Chaos,%,True
+56,Clean,,True
+57,Buffer,,True
+58,BufDice,,True
+59,MotDice,,True
+60,Dest,,True
+61,Random,,True
+62,Min,,True
+63,Max,,True
+64,Depth,,True
+65,Prob,,True
+66,Intvl,,True
+67,Lock,,True
+68,Type,,True
+69,Rate,ms,True
+70,MDepth,%,True
+71,MMin,,True
+72,MMax,,True
+73,Sync,,True
+74,Hold,,True
+75,Seed,,True
+76,Density,,True
+77,Chance,%,True
+78,Dist,beats,True
+79,Dur,ms,True
+80,Rest,ms,True
+81,Reset,,True
+82,Capture,,True
+83,Freeze,,True
+84,Pos,,True
+85,Size,,True
+86,Reverse,,True
+87,Bend,,True
+88,Pitch,,True
+89,Corrupt,,True
+90,MDest,,True
+91,Route,,True
+92,Listen,,True
+93,Sens,,True
+94,Spacing,ms,True
+95,LProb,,True
+96,LCap,,True
+97,LRepeat,,True
+98,Status,,False
+99,Active,,False
+100,Energy,%,False
+101,Take,,False
+102,Clock,,True
+103,Timing,,True
+104,ChaosOn,,True
+105,Source,,True
+106,Dice,,True
+107,Len Min,ms,True
+108,Len Max,ms,True
+109,Brk Min,%,True
+110,Brk Max,%,True
+111,Pos Min,%,True
+112,Pos Max,%,True
+113,Buf Min,ms,True
+114,Buf Max,ms,True
+115,Bnd Min,st,True
+116,Bnd Max,st,True
+117,Pit Min,st,True
+118,Pit Max,st,True
+119,Crp Min,%,True
+120,Crp Max,%,True
+121,Mix Min,%,True
+122,Mix Max,%,True
+123,Edit,,False
+124,Rate,ms,True
+125,Distanc,beats,True
+126,Capture,,True
+127,Rec max,s,True
+128,Repeat,,True
+129,RecStat,,False
+130,RecFill,,False
+131,PERFORM,,True
+132,GLITCH,,True
+133,CHAOS,,True
+134,SIZE,ms,True
+135,REPEAT,,True
+136,REVERSE,,True
+137,CUT,,True
+138,REST,,True
+139,MOTION,,True
+140,RATE,beats,True
+141,DICE,,True
+142,EDIT,,False
+143,PRESET,,True
+144,EVENT,,False
+145,VARIANT,,False
+146,FRAG ms,ms,False
+147,BUDGET,,False
+148,RR MODE,,True
+149,RR INT,%,True
+150,RR PROB,%,True
+151,RR VAR,%,True
+152,RR RATE,beats,True
+153,RR HOLD,steps,True
+154,RR LIVE,,False
+155,RR MS,ms,False

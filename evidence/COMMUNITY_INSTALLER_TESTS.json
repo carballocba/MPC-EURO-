@@ -1,0 +1,107 @@
+{
+  "installer_tests": [
+    {
+      "scenario": "clean",
+      "pass": true
+    },
+    {
+      "scenario": "upgrade",
+      "pass": true
+    },
+    {
+      "scenario": "reinstall",
+      "pass": true
+    },
+    {
+      "scenario": "uninstall",
+      "pass": true
+    },
+    {
+      "scenario": "copy",
+      "pass": true
+    },
+    {
+      "scenario": "registry",
+      "pass": true
+    },
+    {
+      "scenario": "stopped",
+      "pass": true
+    },
+    {
+      "scenario": "renamed",
+      "pass": true
+    },
+    {
+      "scenario": "activated",
+      "pass": true
+    },
+    {
+      "scenario": "registered",
+      "pass": true
+    },
+    {
+      "scenario": "started",
+      "pass": true
+    },
+    {
+      "scenario": "collision",
+      "pass": true
+    },
+    {
+      "scenario": "foreign-inside",
+      "pass": true
+    },
+    {
+      "scenario": "defer",
+      "pass": true
+    },
+    {
+      "scenario": "rollback-twice",
+      "pass": true
+    },
+    {
+      "scenario": "watchdog-loss",
+      "pass": true
+    },
+    {
+      "scenario": "uninstall-fail-copy",
+      "pass": true
+    },
+    {
+      "scenario": "uninstall-fail-registry",
+      "pass": true
+    },
+    {
+      "scenario": "uninstall-fail-stopped",
+      "pass": true
+    },
+    {
+      "scenario": "uninstall-fail-renamed",
+      "pass": true
+    },
+    {
+      "scenario": "uninstall-fail-activated",
+      "pass": true
+    },
+    {
+      "scenario": "uninstall-fail-registered",
+      "pass": true
+    },
+    {
+      "scenario": "uninstall-fail-started",
+      "pass": true
+    }
+  ],
+  "audio_binary_sha256": "588019130b31ced7077f7e4afe35bd23b0753df7a2959e2af39fa825e1b81afd",
+  "installer_zip_sha256": "6f6451d19abbc5b9886fd75df095887b181455a3b507997e24b4b262295ecead",
+  "source_rebuild_identical": true,
+  "source_package_identical": true,
+  "new_installer_physical_validation": false,
+  "catalog_errors": 0,
+  "catalog_warnings": [
+    "custom install.sh",
+    "custom uninstall.sh"
+  ],
+  "device_access": false
+}

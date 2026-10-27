@@ -1,0 +1,1 @@
+<PLUGIN name="GHOST" descriptiveName="GHOST / Living Instrument" format="VST" category="Effect" manufacturer="MPC-EURO" version="2.0.0" file="%payload-path%/MPC-EURO - VST - GHOST/ghost.so" uid="47485354" isInstrument="0" fileTime="0" infoUpdateTime="0" numInputs="2" numOutputs="2" isShell="0" />

@@ -1,0 +1,8 @@
+GHOST Performance Edition / OFFLINE TRIAL ONLY
+UID 47485354 / MPC-EURO.vst.ghost
+Original indices 0..130 and sixteen factory programs preserved.
+Old states load COMPAT. Performance mode is explicit; new construction starts RUN.
+Screen Mode: PLAY 16 declarations / native BUFFER-EVENTS-MOTION-RANDOM-TIMING-GLOBAL-MIDI-SCENES / host PRESET selector. Program Mode unchanged.
+12 vs 16 physical reachability and host focus remain pending on MPC One Hakai 3.9.1.
+Do not deploy without explicit authorization and verified transactional backup/rollback.
+No source/preset/audio renders constitute hardware validation.

@@ -1,0 +1,1 @@
+Canonical sources and resources are frozen in this tree. Follow README.md rebuild.py and package.py. Historical development generators are reference-only. The release branch contains this exact source snapshot, not a claim that an earlier dirty checkout commit was sufficient.

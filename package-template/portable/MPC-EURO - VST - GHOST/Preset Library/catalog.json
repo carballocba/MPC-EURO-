@@ -1,0 +1,4854 @@
+{
+  "original": [
+    {
+      "file": "MPC-EURO - VST - GHOST/Presets/00-Classic-Repeat.fxp",
+      "sha256": "28f259639512fae57ab841f906262531ad3cfffd676ca3da355acc7a57b57c96"
+    },
+    {
+      "file": "MPC-EURO - VST - GHOST/Presets/01-Micro-Stutter.fxp",
+      "sha256": "2c9bc775dc8459776ff4896c73f714fe49d34f1084f9baaeecdf408779940798"
+    },
+    {
+      "file": "MPC-EURO - VST - GHOST/Presets/02-Broken-Tape.fxp",
+      "sha256": "3476579e71d4c6c3d7296d7f9f6a8e836c4062d750f7b91c66a26b12b38df215"
+    },
+    {
+      "file": "MPC-EURO - VST - GHOST/Presets/03-Digital-Decay.fxp",
+      "sha256": "e1a26156ad4e682de94dad3c9f4a1a35645cd16ad88297029a10a2eb397e453c"
+    },
+    {
+      "file": "MPC-EURO - VST - GHOST/Presets/04-Random-Cuts.fxp",
+      "sha256": "8acbd51ee297f26f5b9701de121245525ca12eb04b1eea99ee47ed9eaccfc5bd"
+    },
+    {
+      "file": "MPC-EURO - VST - GHOST/Presets/05-Frozen-Rhodes.fxp",
+      "sha256": "4b2d88cd938e0d020c0ab9eb2a99bbe75a39897de4a0ea9c7ae021ca76ec78d7"
+    },
+    {
+      "file": "MPC-EURO - VST - GHOST/Presets/06-Glitch-Percussion.fxp",
+      "sha256": "ea410f9d493759fd63e68dbaae9d109cc4f36a0eb7d9f29c6524cdf248389403"
+    },
+    {
+      "file": "MPC-EURO - VST - GHOST/Presets/07-Controlled-Chaos.fxp",
+      "sha256": "8e4f74b34a5bc5b10cfeed71b6da1dd4d6b5b5c225d9a2306a41d5228ddfe5bf"
+    },
+    {
+      "file": "MPC-EURO - VST - GHOST/Presets/08-Ghost-Scatter.fxp",
+      "sha256": "4494f17fd14119a005526c1edf4a61c6a3b53345afbc3d80bdf04f7b38416ea9"
+    },
+    {
+      "file": "MPC-EURO - VST - GHOST/Presets/09-Dust-and-Gaps.fxp",
+      "sha256": "c1d5f3f288cd7a9d02c934b46109cd88df101151e098f92bebc3620464d17d5d"
+    },
+    {
+      "file": "MPC-EURO - VST - GHOST/Presets/10-Breathing-Tape.fxp",
+      "sha256": "7e455dc76ffeda7edd61ea76fde7ead613172e89cd38097b72565666e46e416d"
+    },
+    {
+      "file": "MPC-EURO - VST - GHOST/Presets/11-Buffer-Drift.fxp",
+      "sha256": "1d33044fc464db06fc7e299c9d675ead31394e0e06481416cc50bb76f4a7f44d"
+    },
+    {
+      "file": "MPC-EURO - VST - GHOST/Presets/12-Percussive-Listen.fxp",
+      "sha256": "9965e3090d81d9d54c7d383423b39eec2126ac77f91072abc9dbe1eee862e878"
+    },
+    {
+      "file": "MPC-EURO - VST - GHOST/Presets/13-Chaos-Cuts.fxp",
+      "sha256": "8318a0fe03f112185a104ba8a86711c06a0751ed3b41c02437ae2a5574908cbf"
+    },
+    {
+      "file": "MPC-EURO - VST - GHOST/Presets/14-Pitch-Mutations.fxp",
+      "sha256": "44badb53f47dd4e0800b5c4983f889f49db1c0fce699a92126c530745ff88eb5"
+    },
+    {
+      "file": "MPC-EURO - VST - GHOST/Presets/15-Live-Canvas.fxp",
+      "sha256": "34767d1daf60973e9f4c79441333c7bbdbf5f5be8b2e8e0ad05633e341b29cdf"
+    }
+  ],
+  "new": [
+    {
+      "name": "Dusty Tape",
+      "category": "TAPE & TEXTURE",
+      "file": "Preset Library/TAPE-TEXTURE/Dusty Tape.fxp",
+      "sha256": "6e9746d75e59a950896d7301de45d585b0e3077ebc7a381069a1e22d407b8769",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.4
+        ],
+        [
+          133,
+          0.1
+        ],
+        [
+          134,
+          0.7958836910954259
+        ],
+        [
+          53,
+          0.45
+        ],
+        [
+          135,
+          0.8
+        ],
+        [
+          136,
+          0.15
+        ],
+        [
+          137,
+          0.05
+        ],
+        [
+          138,
+          0.55
+        ],
+        [
+          139,
+          0.12
+        ],
+        [
+          9,
+          0.05
+        ],
+        [
+          17,
+          0.12
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.015274280918593118
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "SUBTLE",
+      "behavior": "HYBRID",
+      "material": "MELODY",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 80%, reverse 15%, cut 5%; fragment 180 ms; evolution 12%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.1725986748933792,
+          "rms_delta": 0.019614662571588858,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.16575899720191956,
+          "rms_delta": 0.01705284689068683,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.30593976378440857,
+          "rms_delta": 0.0287324065252926,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.203383669257164,
+          "rms_delta": 0.022342697146252668,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.3089140057563782,
+          "rms_delta": 0.03485710525583492,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.1999780237674713,
+          "rms_delta": 0.029263940745345808,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/TAPE-TEXTURE/Dusty Tape.wav"
+    },
+    {
+      "name": "Broken Cassette",
+      "category": "TAPE & TEXTURE",
+      "file": "Preset Library/TAPE-TEXTURE/Broken Cassette.fxp",
+      "sha256": "770a04baff0e9719acefe338a0a5633760b3251a65513b1081ecb9cfed960d1f",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.45
+        ],
+        [
+          133,
+          0.5
+        ],
+        [
+          134,
+          0.6186998709598681
+        ],
+        [
+          53,
+          0.7
+        ],
+        [
+          135,
+          0.6
+        ],
+        [
+          136,
+          0.3
+        ],
+        [
+          137,
+          0.1
+        ],
+        [
+          138,
+          0.4
+        ],
+        [
+          139,
+          0.3
+        ],
+        [
+          9,
+          0.3
+        ],
+        [
+          17,
+          0.4
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.01675440604257267
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "MEDIUM",
+      "behavior": "HYBRID",
+      "material": "MELODY",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 60%, reverse 30%, cut 10%; fragment 90 ms; evolution 30%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.1702357530593872,
+          "rms_delta": 0.029838851162171293,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.16508355736732483,
+          "rms_delta": 0.02334782872701067,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.28219807147979736,
+          "rms_delta": 0.02480216683482973,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.20265120267868042,
+          "rms_delta": 0.03782805228269363,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.3089140057563782,
+          "rms_delta": 0.029156888054068218,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.1999957114458084,
+          "rms_delta": 0.052408854696915155,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/TAPE-TEXTURE/Broken Cassette.wav"
+    },
+    {
+      "name": "Wow & Flutter",
+      "category": "TAPE & TEXTURE",
+      "file": "Preset Library/TAPE-TEXTURE/Wow & Flutter.fxp",
+      "sha256": "9b1c9b597f057bd426dae9baa3c6974a0f176058a6cb1364c0f16e0fa35a846e",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.4
+        ],
+        [
+          133,
+          0.2
+        ],
+        [
+          134,
+          0.9088259594987488
+        ],
+        [
+          53,
+          0.5
+        ],
+        [
+          135,
+          0.3
+        ],
+        [
+          136,
+          0.65
+        ],
+        [
+          137,
+          0.05
+        ],
+        [
+          138,
+          0.55
+        ],
+        [
+          139,
+          0.7
+        ],
+        [
+          9,
+          0.03
+        ],
+        [
+          17,
+          0.05
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.018234531166552225
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "SUBTLE",
+      "behavior": "HYBRID",
+      "material": "MELODY",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 30%, reverse 65%, cut 5%; fragment 280 ms; evolution 70%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.15902553498744965,
+          "rms_delta": 0.013117127976917204,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.14179782569408417,
+          "rms_delta": 0.0165585858755519,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.30593976378440857,
+          "rms_delta": 0.017383015075990355,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.2043466418981552,
+          "rms_delta": 0.028008432573831708,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.3089140057563782,
+          "rms_delta": 0.023864974754906874,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.19999662041664124,
+          "rms_delta": 0.02386494767074239,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/TAPE-TEXTURE/Wow & Flutter.wav"
+    },
+    {
+      "name": "Vinyl Fragments",
+      "category": "TAPE & TEXTURE",
+      "file": "Preset Library/TAPE-TEXTURE/Vinyl Fragments.fxp",
+      "sha256": "6405a84450ac7bc652bae7de37a24fcbf9556a9d15874cc1f73bfe792f9b2176",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.4
+        ],
+        [
+          133,
+          0.45
+        ],
+        [
+          134,
+          0.44151605082431017
+        ],
+        [
+          53,
+          0.6
+        ],
+        [
+          135,
+          0.4
+        ],
+        [
+          136,
+          0.5
+        ],
+        [
+          137,
+          0.1
+        ],
+        [
+          138,
+          0.55
+        ],
+        [
+          139,
+          0.25
+        ],
+        [
+          9,
+          0.2
+        ],
+        [
+          17,
+          0.25
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.019714656290531776
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "MEDIUM",
+      "behavior": "HYBRID",
+      "material": "MELODY",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 40%, reverse 50%, cut 10%; fragment 45 ms; evolution 25%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.15902553498744965,
+          "rms_delta": 0.01794530109748228,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.14179782569408417,
+          "rms_delta": 0.013417398432248553,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.30593976378440857,
+          "rms_delta": 0.022711417907213066,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.2043466418981552,
+          "rms_delta": 0.03258682552716293,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.3089140057563782,
+          "rms_delta": 0.023921932467862506,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.19999662041664124,
+          "rms_delta": 0.0323744571686045,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/TAPE-TEXTURE/Vinyl Fragments.wav"
+    },
+    {
+      "name": "Haunted Rhodes",
+      "category": "TAPE & TEXTURE",
+      "file": "Preset Library/TAPE-TEXTURE/Haunted Rhodes.fxp",
+      "sha256": "b4edffb5028b066e9c8c1e8cde726a102be22eb48cd204225dcdaa5bf6f3ee5f",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.4
+        ],
+        [
+          133,
+          0.25
+        ],
+        [
+          134,
+          0.847179579484556
+        ],
+        [
+          53,
+          0.65
+        ],
+        [
+          135,
+          0.2
+        ],
+        [
+          136,
+          0.75
+        ],
+        [
+          137,
+          0.05
+        ],
+        [
+          138,
+          0.55
+        ],
+        [
+          139,
+          0.4
+        ],
+        [
+          9,
+          0.08
+        ],
+        [
+          17,
+          0.08
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.02119478141451133
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "SUBTLE",
+      "behavior": "HYBRID",
+      "material": "MELODY",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 20%, reverse 75%, cut 5%; fragment 220 ms; evolution 40%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.1773894727230072,
+          "rms_delta": 0.02754979869664932,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.15566520392894745,
+          "rms_delta": 0.021375936663704593,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.28271371126174927,
+          "rms_delta": 0.02335786944356675,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.20265120267868042,
+          "rms_delta": 0.0418201525673288,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.3089140057563782,
+          "rms_delta": 0.027331950345512012,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.19999662041664124,
+          "rms_delta": 0.03664364481765945,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/TAPE-TEXTURE/Haunted Rhodes.wav"
+    },
+    {
+      "name": "Tape Collapse",
+      "category": "TAPE & TEXTURE",
+      "file": "Preset Library/TAPE-TEXTURE/Tape Collapse.fxp",
+      "sha256": "4e9f9e8a6f8d85136fb99b5ee5984a36b470ad27d9949406ae057edb63013af4",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.95
+        ],
+        [
+          133,
+          0.95
+        ],
+        [
+          134,
+          0.1036458905138235
+        ],
+        [
+          53,
+          0.95
+        ],
+        [
+          135,
+          0.45
+        ],
+        [
+          136,
+          0.25
+        ],
+        [
+          137,
+          0.3
+        ],
+        [
+          138,
+          0.1
+        ],
+        [
+          139,
+          0.9
+        ],
+        [
+          9,
+          0.8
+        ],
+        [
+          17,
+          0.85
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.022674906538490882
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "EXTREME",
+      "behavior": "HYBRID",
+      "material": "MELODY",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 45%, reverse 25%, cut 30%; fragment 12 ms; evolution 90%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.18237879872322083,
+          "rms_delta": 0.031346680849075284,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.18238526582717896,
+          "rms_delta": 0.028005938654084656,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.27330902218818665,
+          "rms_delta": 0.042449705791496414,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.203383669257164,
+          "rms_delta": 0.0611529879290384,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.30838584899902344,
+          "rms_delta": 0.03909710643896923,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.1999957114458084,
+          "rms_delta": 0.073017494553675,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/TAPE-TEXTURE/Tape Collapse.wav"
+    },
+    {
+      "name": "Broken Drummer",
+      "category": "RHYTHM & BREAKS",
+      "file": "Preset Library/RHYTHM-BREAKS/Broken Drummer.fxp",
+      "sha256": "5304a3329c76fb6d8569b35da4f940a3144fe1c415f54226e270931411510fde",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.55
+        ],
+        [
+          133,
+          0.3
+        ],
+        [
+          134,
+          0.5355146749671332
+        ],
+        [
+          53,
+          0.8
+        ],
+        [
+          135,
+          0.65
+        ],
+        [
+          136,
+          0.2
+        ],
+        [
+          137,
+          0.15
+        ],
+        [
+          138,
+          0.35
+        ],
+        [
+          139,
+          0.2
+        ],
+        [
+          9,
+          0.3
+        ],
+        [
+          17,
+          0.2
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.024155031662470437
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "MEDIUM",
+      "behavior": "HYBRID",
+      "material": "DRUMS",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 65%, reverse 20%, cut 15%; fragment 65 ms; evolution 20%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.16516079008579254,
+          "rms_delta": 0.03074266291186662,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.16678586602210999,
+          "rms_delta": 0.03034425466690467,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.27607911825180054,
+          "rms_delta": 0.03757469741315839,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.20265120267868042,
+          "rms_delta": 0.0635801511580465,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.304140567779541,
+          "rms_delta": 0.03798616277851532,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.1999957114458084,
+          "rms_delta": 0.048507267751446745,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/RHYTHM-BREAKS/Broken Drummer.wav"
+    },
+    {
+      "name": "Stutter Funk",
+      "category": "RHYTHM & BREAKS",
+      "file": "Preset Library/RHYTHM-BREAKS/Stutter Funk.fxp",
+      "sha256": "3ab5212ed8410f6b7bea62989e1092d1a8960c89c159379da01aa18cc96a5661",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.55
+        ],
+        [
+          133,
+          0.15
+        ],
+        [
+          134,
+          0.32023404943096984
+        ],
+        [
+          53,
+          0.75
+        ],
+        [
+          135,
+          0.9
+        ],
+        [
+          136,
+          0.05
+        ],
+        [
+          137,
+          0.05
+        ],
+        [
+          138,
+          0.4
+        ],
+        [
+          139,
+          0.1
+        ],
+        [
+          9,
+          0.5
+        ],
+        [
+          17,
+          0.1
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.025635156786449988
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "MEDIUM",
+      "behavior": "HYBRID",
+      "material": "DRUMS",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 90%, reverse 5%, cut 5%; fragment 28 ms; evolution 10%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.1828284114599228,
+          "rms_delta": 0.02110912311527699,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.17749667167663574,
+          "rms_delta": 0.01823347496554435,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.28002509474754333,
+          "rms_delta": 0.029313069394367643,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.2043466418981552,
+          "rms_delta": 0.03200192942703152,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.3089140057563782,
+          "rms_delta": 0.02783860805119863,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.19999662041664124,
+          "rms_delta": 0.034908386425942316,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/RHYTHM-BREAKS/Stutter Funk.wav"
+    },
+    {
+      "name": "Beat Surgery",
+      "category": "RHYTHM & BREAKS",
+      "file": "Preset Library/RHYTHM-BREAKS/Beat Surgery.fxp",
+      "sha256": "cdd0f76cb7b3f5794673012441043bbe75473cbbe63e041343f2f8f28859dc24",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.8
+        ],
+        [
+          133,
+          0.6
+        ],
+        [
+          134,
+          0.207291781027647
+        ],
+        [
+          53,
+          0.85
+        ],
+        [
+          135,
+          0.6
+        ],
+        [
+          136,
+          0.15
+        ],
+        [
+          137,
+          0.25
+        ],
+        [
+          138,
+          0.25
+        ],
+        [
+          139,
+          0.3
+        ],
+        [
+          9,
+          0.65
+        ],
+        [
+          17,
+          0.3
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.027115281910429542
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "EXTREME",
+      "behavior": "HYBRID",
+      "material": "DRUMS",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 60%, reverse 15%, cut 25%; fragment 18 ms; evolution 30%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.17899243533611298,
+          "rms_delta": 0.03395888290927355,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.17701782286167145,
+          "rms_delta": 0.03505771567728213,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.27607911825180054,
+          "rms_delta": 0.03249274301749056,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.203383669257164,
+          "rms_delta": 0.044560337422679744,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.304140567779541,
+          "rms_delta": 0.03767000632170222,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.1999957114458084,
+          "rms_delta": 0.05568053057064041,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/RHYTHM-BREAKS/Beat Surgery.wav"
+    },
+    {
+      "name": "Reverse Groove",
+      "category": "RHYTHM & BREAKS",
+      "file": "Preset Library/RHYTHM-BREAKS/Reverse Groove.fxp",
+      "sha256": "d3a6a28d04f34a254a153a763df042a115c74f5851f6d3313ca07e4565ebb0f7",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.45
+        ],
+        [
+          133,
+          0.3
+        ],
+        [
+          134,
+          0.7812727305359819
+        ],
+        [
+          53,
+          0.8
+        ],
+        [
+          135,
+          0.1
+        ],
+        [
+          136,
+          0.85
+        ],
+        [
+          137,
+          0.05
+        ],
+        [
+          138,
+          0.5
+        ],
+        [
+          139,
+          0.25
+        ],
+        [
+          9,
+          0.1
+        ],
+        [
+          17,
+          0.1
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.028595407034409093
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "MEDIUM",
+      "behavior": "HYBRID",
+      "material": "DRUMS",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 10%, reverse 85%, cut 5%; fragment 170 ms; evolution 25%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.15902553498744965,
+          "rms_delta": 0.022924482198551914,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.14179782569408417,
+          "rms_delta": 0.015272175341696333,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.30593976378440857,
+          "rms_delta": 0.026775554171525856,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.203383669257164,
+          "rms_delta": 0.039361012547902946,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.3089140057563782,
+          "rms_delta": 0.018890391263153325,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.1999780237674713,
+          "rms_delta": 0.045996692102840235,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/RHYTHM-BREAKS/Reverse Groove.wav"
+    },
+    {
+      "name": "Half-Time Ghost",
+      "category": "RHYTHM & BREAKS",
+      "file": "Preset Library/RHYTHM-BREAKS/Half-Time Ghost.fxp",
+      "sha256": "0e3045bd3b8b6ec9d311df4700698df4c55194bf8302d346a1ebcaaebc9f67ab",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.6
+        ],
+        [
+          133,
+          0.15
+        ],
+        [
+          134,
+          0.965866409159854
+        ],
+        [
+          53,
+          0.85
+        ],
+        [
+          135,
+          0.85
+        ],
+        [
+          136,
+          0.1
+        ],
+        [
+          137,
+          0.05
+        ],
+        [
+          138,
+          0.4
+        ],
+        [
+          139,
+          0.15
+        ],
+        [
+          9,
+          0.2
+        ],
+        [
+          17,
+          0.1
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.030075532158388648
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "MEDIUM",
+      "behavior": "HYBRID",
+      "material": "DRUMS",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 85%, reverse 10%, cut 5%; fragment 350 ms; evolution 15%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.1861647516489029,
+          "rms_delta": 0.04849916650116617,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.19059966504573822,
+          "rms_delta": 0.04727083132012403,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.27665022015571594,
+          "rms_delta": 0.05946800947530999,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.20303000509738922,
+          "rms_delta": 0.07926626858471124,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.3089140057563782,
+          "rms_delta": 0.05433261051580813,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.1999957114458084,
+          "rms_delta": 0.0768750876656745,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/RHYTHM-BREAKS/Half-Time Ghost.wav"
+    },
+    {
+      "name": "Microcuts",
+      "category": "RHYTHM & BREAKS",
+      "file": "Preset Library/RHYTHM-BREAKS/Microcuts.fxp",
+      "sha256": "64a089843bb586059d513a3809bfd79b273f83fdb5eb1333af3198774160d877",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.85
+        ],
+        [
+          133,
+          0.65
+        ],
+        [
+          134,
+          0.0
+        ],
+        [
+          53,
+          0.9
+        ],
+        [
+          135,
+          0.35
+        ],
+        [
+          136,
+          0.1
+        ],
+        [
+          137,
+          0.55
+        ],
+        [
+          138,
+          0.3
+        ],
+        [
+          139,
+          0.4
+        ],
+        [
+          9,
+          0.8
+        ],
+        [
+          17,
+          0.3
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.0315556572823682
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "EXTREME",
+      "behavior": "HYBRID",
+      "material": "DRUMS",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 35%, reverse 10%, cut 55%; fragment 8 ms; evolution 40%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.15902553498744965,
+          "rms_delta": 0.010787938893895298,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.14179782569408417,
+          "rms_delta": 0.010738948977367165,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.30593976378440857,
+          "rms_delta": 0.017616039631829655,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.203383669257164,
+          "rms_delta": 0.03490366886830042,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.30838584899902344,
+          "rms_delta": 0.014103512412678817,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.1999957114458084,
+          "rms_delta": 0.04036044484158923,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/RHYTHM-BREAKS/Microcuts.wav"
+    },
+    {
+      "name": "Slow Mutation",
+      "category": "GENERATIVE & CHAOS",
+      "file": "Preset Library/GENERATIVE-CHAOS/Slow Mutation.fxp",
+      "sha256": "960831c243a4633082ea516b53e85cdafe006384dfe898a66f0c08767d970018",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.4
+        ],
+        [
+          133,
+          0.3
+        ],
+        [
+          134,
+          0.8097044741519813
+        ],
+        [
+          53,
+          0.65
+        ],
+        [
+          135,
+          0.45
+        ],
+        [
+          136,
+          0.5
+        ],
+        [
+          137,
+          0.05
+        ],
+        [
+          138,
+          0.55
+        ],
+        [
+          139,
+          0.2
+        ],
+        [
+          9,
+          0.1
+        ],
+        [
+          17,
+          0.1
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.033035782406347754
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "SUBTLE",
+      "behavior": "GENERATIVE",
+      "material": "DRUMS",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 45%, reverse 50%, cut 5%; fragment 190 ms; evolution 20%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.15902553498744965,
+          "rms_delta": 0.013019227272740385,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.14179782569408417,
+          "rms_delta": 0.005590853408694824,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.30593976378440857,
+          "rms_delta": 0.012765543501472217,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.2043466418981552,
+          "rms_delta": 0.03818407192458425,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.3089140057563782,
+          "rms_delta": 0.009488462764108868,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.19999662041664124,
+          "rms_delta": 0.028989910451264318,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/GENERATIVE-CHAOS/Slow Mutation.wav"
+    },
+    {
+      "name": "Controlled Chaos",
+      "category": "GENERATIVE & CHAOS",
+      "file": "Preset Library/GENERATIVE-CHAOS/Controlled Chaos.fxp",
+      "sha256": "f395288651614a18fddbc9609f14fedba5758680fad39582efa4d17d01c4bb17",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.4
+        ],
+        [
+          133,
+          0.45
+        ],
+        [
+          134,
+          0.5720944301071498
+        ],
+        [
+          53,
+          0.75
+        ],
+        [
+          135,
+          0.65
+        ],
+        [
+          136,
+          0.25
+        ],
+        [
+          137,
+          0.1
+        ],
+        [
+          138,
+          0.55
+        ],
+        [
+          139,
+          0.45
+        ],
+        [
+          9,
+          0.3
+        ],
+        [
+          17,
+          0.2
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.03451590753032731
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "MEDIUM",
+      "behavior": "GENERATIVE",
+      "material": "DRUMS",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 65%, reverse 25%, cut 10%; fragment 75 ms; evolution 45%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.15902553498744965,
+          "rms_delta": 0.01758593934845312,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.14179782569408417,
+          "rms_delta": 0.012886757475402131,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.30593976378440857,
+          "rms_delta": 0.019545847068062505,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.203383669257164,
+          "rms_delta": 0.02492342951312019,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.30593976378440857,
+          "rms_delta": 0.017047376097587146,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.19999662041664124,
+          "rms_delta": 0.032254606571302843,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/GENERATIVE-CHAOS/Controlled Chaos.wav"
+    },
+    {
+      "name": "Ghost Machine",
+      "category": "GENERATIVE & CHAOS",
+      "file": "Preset Library/GENERATIVE-CHAOS/Ghost Machine.fxp",
+      "sha256": "5d1234ddbe313af821642fecd647018087ce3ecb1c72947a2677fe0728944a0a",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.6
+        ],
+        [
+          133,
+          0.65
+        ],
+        [
+          134,
+          0.6699957593489981
+        ],
+        [
+          53,
+          0.8
+        ],
+        [
+          135,
+          0.4
+        ],
+        [
+          136,
+          0.45
+        ],
+        [
+          137,
+          0.15
+        ],
+        [
+          138,
+          0.45
+        ],
+        [
+          139,
+          0.65
+        ],
+        [
+          9,
+          0.4
+        ],
+        [
+          17,
+          0.3
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.035996032654306856
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "MEDIUM",
+      "behavior": "GENERATIVE",
+      "material": "DRUMS",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 40%, reverse 45%, cut 15%; fragment 110 ms; evolution 65%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.15902553498744965,
+          "rms_delta": 0.016311063620135118,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.14179782569408417,
+          "rms_delta": 0.01431555916993629,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.30593976378440857,
+          "rms_delta": 0.026235505243147883,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.2043466418981552,
+          "rms_delta": 0.039603326973286314,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.30593976378440857,
+          "rms_delta": 0.02131455029752706,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.19999662041664124,
+          "rms_delta": 0.040163841985039854,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/GENERATIVE-CHAOS/Ghost Machine.wav"
+    },
+    {
+      "name": "Probability Storm",
+      "category": "GENERATIVE & CHAOS",
+      "file": "Preset Library/GENERATIVE-CHAOS/Probability Storm.fxp",
+      "sha256": "37663cf3f8f5b7a48596f62c0f084de0754f619998118db2f5599797b38974e8",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.75
+        ],
+        [
+          133,
+          0.9
+        ],
+        [
+          134,
+          0.28082971064938145
+        ],
+        [
+          53,
+          0.85
+        ],
+        [
+          135,
+          0.3
+        ],
+        [
+          136,
+          0.3
+        ],
+        [
+          137,
+          0.4
+        ],
+        [
+          138,
+          0.4
+        ],
+        [
+          139,
+          0.8
+        ],
+        [
+          9,
+          0.65
+        ],
+        [
+          17,
+          0.5
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.03747615777828641
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "EXTREME",
+      "behavior": "GENERATIVE",
+      "material": "DRUMS",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 30%, reverse 30%, cut 40%; fragment 24 ms; evolution 80%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.15902553498744965,
+          "rms_delta": 0.014529868182447815,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.14179782569408417,
+          "rms_delta": 0.014331672817507735,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.30593976378440857,
+          "rms_delta": 0.02178172213765474,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.203383669257164,
+          "rms_delta": 0.038358334364896836,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.30593976378440857,
+          "rms_delta": 0.019823675842624063,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.19999662041664124,
+          "rms_delta": 0.036527621776392315,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/GENERATIVE-CHAOS/Probability Storm.wav"
+    },
+    {
+      "name": "Fractal Breaks",
+      "category": "GENERATIVE & CHAOS",
+      "file": "Preset Library/GENERATIVE-CHAOS/Fractal Breaks.fxp",
+      "sha256": "e3d34602140381db8ff78f90b17fb5858cafa9d3e1abaa66245b01fae95c6393",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.65
+        ],
+        [
+          133,
+          0.7
+        ],
+        [
+          134,
+          0.41140808993222105
+        ],
+        [
+          53,
+          0.85
+        ],
+        [
+          135,
+          0.7
+        ],
+        [
+          136,
+          0.2
+        ],
+        [
+          137,
+          0.1
+        ],
+        [
+          138,
+          0.35
+        ],
+        [
+          139,
+          0.9
+        ],
+        [
+          9,
+          0.6
+        ],
+        [
+          17,
+          0.3
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.038956282902265965
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "MEDIUM",
+      "behavior": "GENERATIVE",
+      "material": "DRUMS",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 70%, reverse 20%, cut 10%; fragment 40 ms; evolution 90%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.15902553498744965,
+          "rms_delta": 0.0110826864598461,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.14179782569408417,
+          "rms_delta": 0.010649988098253325,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.30593976378440857,
+          "rms_delta": 0.025103161285278446,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.2043466418981552,
+          "rms_delta": 0.025941987884197344,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.30838584899902344,
+          "rms_delta": 0.019353542222571195,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.19999662041664124,
+          "rms_delta": 0.030459287663250074,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/GENERATIVE-CHAOS/Fractal Breaks.wav"
+    },
+    {
+      "name": "Total Collapse",
+      "category": "GENERATIVE & CHAOS",
+      "file": "Preset Library/GENERATIVE-CHAOS/Total Collapse.fxp",
+      "sha256": "adb34ad5ee4d463d3c7847f033fe9fdcb8deada235382bc64a321d8e061609ba",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          1
+        ],
+        [
+          133,
+          1
+        ],
+        [
+          134,
+          0.030107960892089093
+        ],
+        [
+          53,
+          1
+        ],
+        [
+          135,
+          0.3
+        ],
+        [
+          136,
+          0.2
+        ],
+        [
+          137,
+          0.5
+        ],
+        [
+          138,
+          0.05
+        ],
+        [
+          139,
+          1
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.04043640802624552
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "EXTREME",
+      "behavior": "GENERATIVE",
+      "material": "DRUMS",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 30%, reverse 20%, cut 50%; fragment 9 ms; evolution 100%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.25,
+          "rms_delta": 0.04901735918102354,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.25,
+          "rms_delta": 0.03673518751955248,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.26279914379119873,
+          "rms_delta": 0.04615265905022012,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.25,
+          "rms_delta": 0.0646455082498731,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.26279914379119873,
+          "rms_delta": 0.06982837744030652,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.25,
+          "rms_delta": 0.08889046939686314,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/GENERATIVE-CHAOS/Total Collapse.wav"
+    },
+    {
+      "name": "Frozen Memory",
+      "category": "AMBIENT & DRONES",
+      "file": "Preset Library/AMBIENT-DRONES/Frozen Memory.fxp",
+      "sha256": "3d41bc4ae53cdf5a588a816118e35899ba401a0045d9962074c4c4ca61c20cce",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.4
+        ],
+        [
+          133,
+          0.2
+        ],
+        [
+          134,
+          0.9935282057520725
+        ],
+        [
+          53,
+          0.9
+        ],
+        [
+          135,
+          0.15
+        ],
+        [
+          136,
+          0.8
+        ],
+        [
+          137,
+          0.05
+        ],
+        [
+          138,
+          0.55
+        ],
+        [
+          139,
+          0.25
+        ],
+        [
+          9,
+          0.05
+        ],
+        [
+          17,
+          0.1
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.04191653315022507
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [
+        "CAPTURE",
+        "HELD"
+      ],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio; optionally CAPTURE twice to retain a phrase",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "MEDIUM",
+      "behavior": "HYBRID",
+      "material": "ANY",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 15%, reverse 80%, cut 5%; fragment 390 ms; evolution 25%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.15902553498744965,
+          "rms_delta": 0.018674511140494152,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.17986097931861877,
+          "rms_delta": 0.008148144904160675,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.30593976378440857,
+          "rms_delta": 0.028900398130158527,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.2043466418981552,
+          "rms_delta": 0.03973478732730616,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.3089140057563782,
+          "rms_delta": 0.029135732055736822,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.19999662041664124,
+          "rms_delta": 0.06930684146105102,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/AMBIENT-DRONES/Frozen Memory.wav"
+    },
+    {
+      "name": "Endless Fragments",
+      "category": "AMBIENT & DRONES",
+      "file": "Preset Library/AMBIENT-DRONES/Endless Fragments.fxp",
+      "sha256": "4f0ff314fce059ccf0e8719408d8563e162d422c2de8ee9d63325bc521b03de7",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.5
+        ],
+        [
+          133,
+          0.4
+        ],
+        [
+          134,
+          0.889882315238249
+        ],
+        [
+          53,
+          0.85
+        ],
+        [
+          135,
+          0.7
+        ],
+        [
+          136,
+          0.25
+        ],
+        [
+          137,
+          0.05
+        ],
+        [
+          138,
+          0.55
+        ],
+        [
+          139,
+          0.6
+        ],
+        [
+          9,
+          0.2
+        ],
+        [
+          17,
+          0.15
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.04339665827420462
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [
+        "CAPTURE",
+        "HELD"
+      ],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio; optionally CAPTURE twice to retain a phrase",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "MEDIUM",
+      "behavior": "HYBRID",
+      "material": "ANY",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 70%, reverse 25%, cut 5%; fragment 260 ms; evolution 60%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.1857987642288208,
+          "rms_delta": 0.03956242332187585,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.18432176113128662,
+          "rms_delta": 0.03097858292761717,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.27680495381355286,
+          "rms_delta": 0.06010515170097582,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.20265120267868042,
+          "rms_delta": 0.06439974864323786,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.3089140057563782,
+          "rms_delta": 0.04688529905858525,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.1999957114458084,
+          "rms_delta": 0.07253812012067508,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/AMBIENT-DRONES/Endless Fragments.wav"
+    },
+    {
+      "name": "Dark Matter",
+      "category": "AMBIENT & DRONES",
+      "file": "Preset Library/AMBIENT-DRONES/Dark Matter.fxp",
+      "sha256": "87eaf8117618b043a882cf5b120b0a456b8916ebd2af333e23fac94e1bde13bf",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.4
+        ],
+        [
+          133,
+          0.5
+        ],
+        [
+          134,
+          0.9429595503388948
+        ],
+        [
+          53,
+          0.9
+        ],
+        [
+          135,
+          0.2
+        ],
+        [
+          136,
+          0.65
+        ],
+        [
+          137,
+          0.15
+        ],
+        [
+          138,
+          0.55
+        ],
+        [
+          139,
+          0.45
+        ],
+        [
+          9,
+          0.15
+        ],
+        [
+          17,
+          0.4
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.04487678339818418
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "MEDIUM",
+      "behavior": "HYBRID",
+      "material": "ANY",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 20%, reverse 65%, cut 15%; fragment 320 ms; evolution 45%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.15902553498744965,
+          "rms_delta": 0.01696300963155711,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.14179782569408417,
+          "rms_delta": 0.014130237341737115,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.30593976378440857,
+          "rms_delta": 0.017904659727338394,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.2043466418981552,
+          "rms_delta": 0.055587816497304696,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.3089140057563782,
+          "rms_delta": 0.02709525581007094,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.19999662041664124,
+          "rms_delta": 0.0544570128442247,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/AMBIENT-DRONES/Dark Matter.wav"
+    },
+    {
+      "name": "Spectral Drift",
+      "category": "AMBIENT & DRONES",
+      "file": "Preset Library/AMBIENT-DRONES/Spectral Drift.fxp",
+      "sha256": "2df22e9c0c05eb3d75ee3f49d2c7638890ea51554638304eec8c562e855ac010",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.4
+        ],
+        [
+          133,
+          0.45
+        ],
+        [
+          134,
+          0.8228161798644421
+        ],
+        [
+          53,
+          0.8
+        ],
+        [
+          135,
+          0.25
+        ],
+        [
+          136,
+          0.7
+        ],
+        [
+          137,
+          0.05
+        ],
+        [
+          138,
+          0.55
+        ],
+        [
+          139,
+          0.8
+        ],
+        [
+          9,
+          0.1
+        ],
+        [
+          17,
+          0.2
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.04635690852216373
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "MEDIUM",
+      "behavior": "HYBRID",
+      "material": "ANY",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 25%, reverse 70%, cut 5%; fragment 200 ms; evolution 80%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.15902553498744965,
+          "rms_delta": 0.007217040798295324,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.14179782569408417,
+          "rms_delta": 0.004449471475965951,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.30593976378440857,
+          "rms_delta": 0.029404640204033248,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.2043466418981552,
+          "rms_delta": 0.036224285215084855,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.3089140057563782,
+          "rms_delta": 0.025997659647781987,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.19999662041664124,
+          "rms_delta": 0.030487355112968545,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/AMBIENT-DRONES/Spectral Drift.wav"
+    },
+    {
+      "name": "Ghost Drone",
+      "category": "AMBIENT & DRONES",
+      "file": "Preset Library/AMBIENT-DRONES/Ghost Drone.fxp",
+      "sha256": "0b38ad31ded19495f6a3596250ac63929fda2fdc79152cb7ecbf88d622f9809d",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.5
+        ],
+        [
+          133,
+          0.65
+        ],
+        [
+          134,
+          0.9868882942875391
+        ],
+        [
+          53,
+          0.95
+        ],
+        [
+          135,
+          0.5
+        ],
+        [
+          136,
+          0.45
+        ],
+        [
+          137,
+          0.05
+        ],
+        [
+          138,
+          0.55
+        ],
+        [
+          139,
+          0.65
+        ],
+        [
+          9,
+          0.2
+        ],
+        [
+          17,
+          0.3
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.04783703364614328
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [
+        "CAPTURE",
+        "HELD"
+      ],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio; optionally CAPTURE twice to retain a phrase",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "MEDIUM",
+      "behavior": "HYBRID",
+      "material": "ANY",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 50%, reverse 45%, cut 5%; fragment 380 ms; evolution 65%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.15902553498744965,
+          "rms_delta": 0.019837354534736406,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.19066262245178223,
+          "rms_delta": 0.031959886375906674,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.30593976378440857,
+          "rms_delta": 0.0454419106828411,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.2043466418981552,
+          "rms_delta": 0.04498822136721537,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.30693915486335754,
+          "rms_delta": 0.024364498140703957,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.1999957114458084,
+          "rms_delta": 0.06930446553384474,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/AMBIENT-DRONES/Ghost Drone.wav"
+    },
+    {
+      "name": "Broken Words",
+      "category": "VOCAL DESTRUCTION",
+      "file": "Preset Library/VOCAL DESTRUCTION/Broken Words.fxp",
+      "sha256": "d79230e551b774dc6226587f5172065b93c3cf8269c3fe47944d74e21a3cebd9",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.55
+        ],
+        [
+          133,
+          0.4
+        ],
+        [
+          134,
+          0.554458319227633
+        ],
+        [
+          53,
+          0.8
+        ],
+        [
+          135,
+          0.65
+        ],
+        [
+          136,
+          0.2
+        ],
+        [
+          137,
+          0.15
+        ],
+        [
+          138,
+          0.5
+        ],
+        [
+          139,
+          0.2
+        ],
+        [
+          9,
+          0.35
+        ],
+        [
+          17,
+          0.15
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.04931715877012283
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "MEDIUM",
+      "behavior": "HYBRID",
+      "material": "VOICE",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 65%, reverse 20%, cut 15%; fragment 70 ms; evolution 20%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.15902553498744965,
+          "rms_delta": 0.013908648088950657,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.14179782569408417,
+          "rms_delta": 0.010476293720916857,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.30593976378440857,
+          "rms_delta": 0.021085544942138417,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.203383669257164,
+          "rms_delta": 0.03009688049283221,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.30838584899902344,
+          "rms_delta": 0.01534785984042383,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.1999957114458084,
+          "rms_delta": 0.0328980464482926,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/VOCAL DESTRUCTION/Broken Words.wav"
+    },
+    {
+      "name": "Vocal Stutter",
+      "category": "VOCAL DESTRUCTION",
+      "file": "Preset Library/VOCAL DESTRUCTION/Vocal Stutter.fxp",
+      "sha256": "bcce53474e1ea280f77faf4ba16b316943f87620e4de22f0353414d9311ff857",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.7
+        ],
+        [
+          133,
+          0.2
+        ],
+        [
+          134,
+          0.2912647194577684
+        ],
+        [
+          53,
+          0.85
+        ],
+        [
+          135,
+          0.85
+        ],
+        [
+          136,
+          0.1
+        ],
+        [
+          137,
+          0.05
+        ],
+        [
+          138,
+          0.35
+        ],
+        [
+          139,
+          0.1
+        ],
+        [
+          9,
+          0.6
+        ],
+        [
+          17,
+          0.1
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.05079728389410239
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "MEDIUM",
+      "behavior": "HYBRID",
+      "material": "VOICE",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 85%, reverse 10%, cut 5%; fragment 25 ms; evolution 10%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.1906740963459015,
+          "rms_delta": 0.02678822356907015,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.18627336621284485,
+          "rms_delta": 0.022300607425587267,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.30593976378440857,
+          "rms_delta": 0.02775434397792973,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.2043466418981552,
+          "rms_delta": 0.027954872311883962,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.3089140057563782,
+          "rms_delta": 0.02626956164847358,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.19999662041664124,
+          "rms_delta": 0.03993624705718381,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/VOCAL DESTRUCTION/Vocal Stutter.wav"
+    },
+    {
+      "name": "Phantom Voice",
+      "category": "VOCAL DESTRUCTION",
+      "file": "Preset Library/VOCAL DESTRUCTION/Phantom Voice.fxp",
+      "sha256": "1a1163972e879402db0f1602576ebfad202cf3c897c674b0d0cc6b3c8903f46d",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.4
+        ],
+        [
+          133,
+          0.45
+        ],
+        [
+          134,
+          0.7657757302033369
+        ],
+        [
+          53,
+          0.75
+        ],
+        [
+          135,
+          0.1
+        ],
+        [
+          136,
+          0.85
+        ],
+        [
+          137,
+          0.05
+        ],
+        [
+          138,
+          0.55
+        ],
+        [
+          139,
+          0.55
+        ],
+        [
+          9,
+          0.1
+        ],
+        [
+          17,
+          0.2
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.05227740901808194
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "MEDIUM",
+      "behavior": "HYBRID",
+      "material": "VOICE",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 10%, reverse 85%, cut 5%; fragment 160 ms; evolution 55%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.15902553498744965,
+          "rms_delta": 0.014907675301973821,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.14179782569408417,
+          "rms_delta": 0.012076132463325779,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.30593976378440857,
+          "rms_delta": 0.01973499189622661,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.2043466418981552,
+          "rms_delta": 0.04993946926295917,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.3089140057563782,
+          "rms_delta": 0.018545102528067882,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.19999662041664124,
+          "rms_delta": 0.05451837474633209,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/VOCAL DESTRUCTION/Phantom Voice.wav"
+    },
+    {
+      "name": "Speech Corrupt",
+      "category": "VOCAL DESTRUCTION",
+      "file": "Preset Library/VOCAL DESTRUCTION/Speech Corrupt.fxp",
+      "sha256": "4f4651ad220fb71ac706aaa7155ef417f3fb32380a9a855426198f0670c8a259",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.75
+        ],
+        [
+          133,
+          0.7
+        ],
+        [
+          134,
+          0.37727449909207506
+        ],
+        [
+          53,
+          0.85
+        ],
+        [
+          135,
+          0.4
+        ],
+        [
+          136,
+          0.2
+        ],
+        [
+          137,
+          0.4
+        ],
+        [
+          138,
+          0.3
+        ],
+        [
+          139,
+          0.3
+        ],
+        [
+          9,
+          0.7
+        ],
+        [
+          17,
+          0.65
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.0537575341420615
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "EXTREME",
+      "behavior": "HYBRID",
+      "material": "VOICE",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 40%, reverse 20%, cut 40%; fragment 35 ms; evolution 30%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.1894526183605194,
+          "rms_delta": 0.0396973672288638,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.17782607674598694,
+          "rms_delta": 0.028061872363283197,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.27330902218818665,
+          "rms_delta": 0.039713925989481765,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.20265120267868042,
+          "rms_delta": 0.04959329130734992,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.30838584899902344,
+          "rms_delta": 0.04201971284604211,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.1999957114458084,
+          "rms_delta": 0.07447849131577822,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/VOCAL DESTRUCTION/Speech Corrupt.wav"
+    },
+    {
+      "name": "Vocal Scatter",
+      "category": "VOCAL DESTRUCTION",
+      "file": "Preset Library/VOCAL DESTRUCTION/Vocal Scatter.fxp",
+      "sha256": "e4d914adf68acfb6d5d4115e8d878c558a0185e61cf451c7fee0d146cc5a0513",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.55
+        ],
+        [
+          133,
+          0.85
+        ],
+        [
+          134,
+          0.46844853959332633
+        ],
+        [
+          53,
+          0.8
+        ],
+        [
+          135,
+          0.45
+        ],
+        [
+          136,
+          0.45
+        ],
+        [
+          137,
+          0.1
+        ],
+        [
+          138,
+          0.5
+        ],
+        [
+          139,
+          0.75
+        ],
+        [
+          9,
+          0.4
+        ],
+        [
+          17,
+          0.25
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.055237659266041045
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "MEDIUM",
+      "behavior": "HYBRID",
+      "material": "VOICE",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 45%, reverse 45%, cut 10%; fragment 50 ms; evolution 75%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.15902553498744965,
+          "rms_delta": 0.0073971666121453415,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.14179782569408417,
+          "rms_delta": 0.009247020358928175,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.30593976378440857,
+          "rms_delta": 0.022635221386852648,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.2043466418981552,
+          "rms_delta": 0.013813661781094756,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.30838584899902344,
+          "rms_delta": 0.017164794251605484,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.19999662041664124,
+          "rms_delta": 0.013688064431178452,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/VOCAL DESTRUCTION/Vocal Scatter.wav"
+    },
+    {
+      "name": "Safe Glitch",
+      "category": "LIVE PERFORMANCE",
+      "file": "Preset Library/LIVE PERFORMANCE/Safe Glitch.fxp",
+      "sha256": "36f115812f28337f193351218539a6b2b9ef5f3e92d07c93683a32208091e3fb",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.4
+        ],
+        [
+          133,
+          0.15
+        ],
+        [
+          134,
+          0.6456323597288842
+        ],
+        [
+          53,
+          0.5
+        ],
+        [
+          135,
+          0.8
+        ],
+        [
+          136,
+          0.15
+        ],
+        [
+          137,
+          0.05
+        ],
+        [
+          138,
+          0.55
+        ],
+        [
+          139,
+          0.1
+        ],
+        [
+          9,
+          0.1
+        ],
+        [
+          17,
+          0.05
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.0567177843900206
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "SUBTLE",
+      "behavior": "HYBRID",
+      "material": "ANY",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 80%, reverse 15%, cut 5%; fragment 100 ms; evolution 10%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.16361035406589508,
+          "rms_delta": 0.019547964164732017,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.14216330647468567,
+          "rms_delta": 0.018321573476811483,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.28844693303108215,
+          "rms_delta": 0.023420672043249772,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.2043466418981552,
+          "rms_delta": 0.030547978388319543,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.30838584899902344,
+          "rms_delta": 0.028779501289053887,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.19999662041664124,
+          "rms_delta": 0.03321788683447574,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/LIVE PERFORMANCE/Safe Glitch.wav"
+    },
+    {
+      "name": "Punch Machine",
+      "category": "LIVE PERFORMANCE",
+      "file": "Preset Library/LIVE PERFORMANCE/Punch Machine.fxp",
+      "sha256": "f8989c85a3fbf70f5f83e6aa39ba50bbc19939394f60ca960d877f0392bf36a5",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.8
+        ],
+        [
+          133,
+          0.35
+        ],
+        [
+          134,
+          0.258587669416777
+        ],
+        [
+          53,
+          0.9
+        ],
+        [
+          135,
+          0.9
+        ],
+        [
+          136,
+          0.05
+        ],
+        [
+          137,
+          0.05
+        ],
+        [
+          138,
+          0.3
+        ],
+        [
+          139,
+          0.2
+        ],
+        [
+          9,
+          0.8
+        ],
+        [
+          17,
+          0.2
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.058197909514000154
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "EXTREME",
+      "behavior": "HYBRID",
+      "material": "ANY",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 90%, reverse 5%, cut 5%; fragment 22 ms; evolution 20%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.1937456876039505,
+          "rms_delta": 0.04382721061340301,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.1934785693883896,
+          "rms_delta": 0.037830328127160764,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.27607911825180054,
+          "rms_delta": 0.05939971171426005,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.2043466418981552,
+          "rms_delta": 0.056549518861511126,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.304696649312973,
+          "rms_delta": 0.060489211968586684,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.19999662041664124,
+          "rms_delta": 0.07374275270726831,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/LIVE PERFORMANCE/Punch Machine.wav"
+    },
+    {
+      "name": "Live Dice",
+      "category": "LIVE PERFORMANCE",
+      "file": "Preset Library/LIVE PERFORMANCE/Live Dice.fxp",
+      "sha256": "04b90118bfa0090cf92aed5ab1444ebd3f029022aba298704542be06b9343d4d",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.45
+        ],
+        [
+          133,
+          0.7
+        ],
+        [
+          134,
+          0.5355146749671332
+        ],
+        [
+          53,
+          0.75
+        ],
+        [
+          135,
+          0.5
+        ],
+        [
+          136,
+          0.4
+        ],
+        [
+          137,
+          0.1
+        ],
+        [
+          138,
+          0.55
+        ],
+        [
+          139,
+          0.6
+        ],
+        [
+          9,
+          0.4
+        ],
+        [
+          17,
+          0.25
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.05967803463797971
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "MEDIUM",
+      "behavior": "HYBRID",
+      "material": "ANY",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 50%, reverse 40%, cut 10%; fragment 65 ms; evolution 60%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.15902553498744965,
+          "rms_delta": 0.0023373046791255684,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.14179782569408417,
+          "rms_delta": 0.007851137343223005,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.30593976378440857,
+          "rms_delta": 0.01345716739103792,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.2043466418981552,
+          "rms_delta": 0.017951721511020972,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.30838584899902344,
+          "rms_delta": 0.012221388144735616,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.19999662041664124,
+          "rms_delta": 0.016177303447459757,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/LIVE PERFORMANCE/Live Dice.wav"
+    },
+    {
+      "name": "Emergency Freeze",
+      "category": "LIVE PERFORMANCE",
+      "file": "Preset Library/LIVE PERFORMANCE/Emergency Freeze.fxp",
+      "sha256": "e0ef1c383bb73b6b5124581477428ea63879d37484b4672e17c2fc057d48c435",
+      "parameters": [
+        [
+          48,
+          0
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          132,
+          0.4
+        ],
+        [
+          133,
+          0.2
+        ],
+        [
+          134,
+          0.9264620703782657
+        ],
+        [
+          53,
+          0.9
+        ],
+        [
+          135,
+          0.6
+        ],
+        [
+          136,
+          0.35
+        ],
+        [
+          137,
+          0.05
+        ],
+        [
+          138,
+          0.55
+        ],
+        [
+          139,
+          0.25
+        ],
+        [
+          9,
+          0.1
+        ],
+        [
+          17,
+          0.1
+        ],
+        [
+          77,
+          1
+        ],
+        [
+          79,
+          0.005
+        ],
+        [
+          75,
+          0.061158159761959256
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          54,
+          0
+        ]
+      ],
+      "state": "PEF1 v2",
+      "required": [
+        "LIVE",
+        "HISTORY"
+      ],
+      "recommended": [
+        "CAPTURE",
+        "HELD"
+      ],
+      "minimum_history": "Dependent on selected window, event length, position, tempo and available samples; no fixed minimum asserted",
+      "capture_required": false,
+      "held_required": false,
+      "performance_required": true,
+      "random_required": false,
+      "motion_required": false,
+      "initial_action": "Feed incoming audio; optionally CAPTURE twice to retain a phrase",
+      "empty_buffer": "No stored audio is included; incoming dry is available while circular history fills",
+      "intensity": "MEDIUM",
+      "behavior": "HYBRID",
+      "material": "ANY",
+      "macros": [
+        "ACTIVITY",
+        "CHARACTER",
+        "FRAGMENT",
+        "EVOLUTION",
+        "POSITION",
+        "MIX"
+      ],
+      "description": "Repeat 60%, reverse 35%, cut 5%; fragment 300 ms; evolution 25%.",
+      "audio": [
+        {
+          "fixture": 0,
+          "peak": 0.19236940145492554,
+          "rms_delta": 0.04500700451951641,
+          "deterministic": true
+        },
+        {
+          "fixture": 1,
+          "peak": 0.18730348348617554,
+          "rms_delta": 0.029064902754037232,
+          "deterministic": true
+        },
+        {
+          "fixture": 2,
+          "peak": 0.28336459398269653,
+          "rms_delta": 0.036190802517755354,
+          "deterministic": true
+        },
+        {
+          "fixture": 3,
+          "peak": 0.20265120267868042,
+          "rms_delta": 0.0593291447160083,
+          "deterministic": true
+        },
+        {
+          "fixture": 4,
+          "peak": 0.3089140057563782,
+          "rms_delta": 0.04352775968630019,
+          "deterministic": true
+        },
+        {
+          "fixture": 5,
+          "peak": 0.19999662041664124,
+          "rms_delta": 0.07110860177930524,
+          "deterministic": true
+        }
+      ],
+      "demo": "demos/LIVE PERFORMANCE/Emergency Freeze.wav"
+    }
+  ],
+  "internal_programs": 16,
+  "host_bank_capacity": "Not established beyond existing 16; external categorized FXP files, not a 48-program bank",
+  "hardware_validation": false,
+  "native_sha256": "be64583679da605be2348a25691e7ac5e85ba3b23cc2a71e040a0123eb68cf6d"
+}

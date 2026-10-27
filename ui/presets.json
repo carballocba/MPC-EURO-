@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Classic Repeat",
+    "values": {
+      "time_mode": 1,
+      "grid": 2
+    }
+  },
+  {
+    "name": "Micro Stutter",
+    "values": {
+      "length": 12,
+      "break": 35,
+      "mix": 70
+    }
+  },
+  {
+    "name": "Broken Tape",
+    "values": {
+      "bend": -7,
+      "break": 20,
+      "mix": 65
+    }
+  },
+  {
+    "name": "Digital Decay",
+    "values": {
+      "corrupt": 45,
+      "mix": 60
+    }
+  },
+  {
+    "name": "Random Cuts",
+    "values": {
+      "break": 65,
+      "chance": 40,
+      "density": 65,
+      "mix": 65
+    }
+  },
+  {
+    "name": "Frozen Rhodes",
+    "values": {
+      "pitch": -12,
+      "smooth": 8,
+      "mix": 70
+    }
+  },
+  {
+    "name": "Glitch Percussion",
+    "values": {
+      "time_mode": 1,
+      "grid": 3,
+      "break": 40,
+      "mix": 60
+    }
+  },
+  {
+    "name": "Controlled Chaos",
+    "values": {
+      "break": 50,
+      "corrupt": 25,
+      "mutation": 30,
+      "chance": 65,
+      "mix": 55
+    }
+  }
+]

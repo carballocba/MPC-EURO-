@@ -1,0 +1,18 @@
+# Supervised physical acceptance protocol — authorization still required
+
+This file authorizes no device operations. Record the exact ZIP/SHA, model, Hakai version, sample rate/block size and current baseline. Use ONE instance and copied projects only. Confirm independent SSH, computer/device backups and rollback before the first approved transaction.
+
+| Phase | Procedure | Pass / stop criterion |
+|---|---|---|
+| Fresh preflight | Read-only controller; inspect settings/UID/path, all registered binary hashes, acvs PID/restarts, free storage/RAM and logs | No unexpected change, collision, new crash or unavailable recovery; otherwise NO-GO before mutation |
+| Install/update | Use the EXACT candidate controller once with explicit approval; inspect guardian-ready, committed/done, manifests and unchanged foreign inventory | Stable active/running host, expected files and GHOST registry; no unintended preference changes; otherwise automatic GHOST-only recovery and stop |
+| Short audio | Simple drum loop, MIX0/50/100; LIVE REPEAT with Performance OFF, stop input while repeating, sweep FRAGMENT, Reverse/Freeze/Capture/Clean | Audible intended effect, retained audio, no unexplained silence/clipping/clicks/dropouts |
+| INDEPENDENT | RR with Performance OFF, fixed seed then variation, several phrases at60/120BPM; manual repeat/fragment intervention and Clean | Audible repeat entries/exits and multiple fragment lengths; manual override and Clean work; do not infer from UI values alone |
+| BOTH | Identical loop/settings, enable BOTH then toggle Performance and change mode | Additional Performance character without cancelling RR fragment/entry-exit variation; no repeated short motif from duplicate-mode RNG reset; INDEPENDENT remains unchanged |
+| Native GUI | All9pages,16Screen Q-Links/A-B-C-D and Program mappings; touch then encoder, page/bank changes and preset recall | Correct control/value, yellow rectangle and focus; no stale/misaligned control or grey panel; capture photograph/video evidence |
+| CPU/dropouts | Measure exact ARM callback CPU and wall time separately, idle/subtle/dense BOTH, Motion/Chaos100%, MIDI/Q-Link/touch, tempo/transport and preset recall | Keep median/p99/max and ALL outliers; zero verified deadlines missed/dropouts/crashes. At128/44100 the whole audio block is2.902ms; GHOST shares that budget. Proposed conservative trial target p99≤25% block; any confirmed callback≥one block fails pending investigation. Wall-only scheduling outliers require investigation, not automatic dismissal |
+| Presets/projects |16programs;52FXP via a demonstrated import path; save/recall copied RRF1 project | Correct state/audio, documented buffer requirements; no original-project conversion; older binary cannot be assumed to read RRF1 |
+| Longer test | Only after short phases PASS and separate approval:20minutes continuous loop, mode/tempo/transport/control changes | No unexpected restart, dropout, loss of controls or unbounded resource growth; retain logs and CPU trace |
+| Uninstall/rollback | Only on an approved disposable target, exercise clean install/removal and exact old-folder restore, with preference/other-plugin comparisons | Only GHOST changes; host restored; backups retained; no DNS/PD LAB/MPC-CORE regression |
+
+Immediately stop on instability, wrong registry, grey GUI, no audio or incorrect control behavior. Do not deploy a second build or run unapproved recovery experiments. Do not label this production-ready from offline tests. Confirming the community catalog route (which may bypass custom scripts) requires maintainer review before it is recommended.

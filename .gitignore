@@ -1,0 +1,4 @@
+/rebuild/
+/dist/
+__pycache__/
+*.pyc

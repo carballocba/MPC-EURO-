@@ -1,0 +1,3 @@
+# Offline installer regression tests
+
+On Linux use existing sha256sum; on macOS the harness compiles its small CommonCrypto checksum adapter using cc. No adapters are included in the device package. Set GHOST_RELEASE_ZIP to the final community ZIP and GHOST_PREVIOUS_ZIP to the separately supplied desktop-recovery ZIP, then run python3 community/device-ghost/test_installer.py. No physical device, systemd action or SSH connection is used by this harness. Install/copy/registration/activation/service-boundary faults, unknown and edited files, foreign plugins, deferred-service ownership and rollback are covered. Watchdog worker-loss simulation is separate from a physical timeout/power-failure certification.

@@ -1,0 +1,1 @@
+GHOST 2.4.2 community beta. Read INSTALL.md before running the device-side scripts. Quick Start and the five-page PDF are separate release downloads. New installer offline-tested only; same physically tested BOTH FIX audio binary. Original desktop recovery installer is a separate package.
