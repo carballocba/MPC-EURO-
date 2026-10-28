@@ -1,21 +1,37 @@
-# GHOST 2.4.2 - community beta
+# GHOST 2.4.2 / installer2-rc1 (UNPUBLISHED)
 
-Save your project and back up your music first. Gen1 ARMv7 only, root shell/SSH, existing BusyBox tools and systemctl. The audio binary was physically tested on original MPC One / Hakai 3.9.1. This NEW device-side installer has only offline simulation validation. Other devices/firmware and catalog batch installation have not been physically verified.
+Same approved GHOST audio/GUI/UID/parameters/presets. This is an installer-only candidate, not a replacement of the public v2.4.2 assets. Hardware validation of this installer: NOT TESTED. Root Gen1 ARMv7, existing BusyBox/POSIX tools and systemctl are required. Production refuses MPC_INSTALL_TEST and GHOST_FAILPOINT.
 
-Extract this folder, transfer it whole to the device, and run from its root shell:
+Save projects and keep an independent backup. Before the first device write, explicitly authorize read-only preflight, verify model/Hakai/version, paths, host stability, current plugin/settings hashes, other plugins, mount options, storage and recovery. See GHOST_MPC_HARDWARE_VALIDATION.md in the source candidate.
 
-    sh install.sh -t /YOUR/Synths
+## Required recovery configuration
 
-The official default is /sdcard/Synths. Select your actual writable executable Synths path. No automatic download or remote Python. Uninstall:
+Set GHOST_RECOVERY_ROOT and (when different) GHOST_WORK_ROOT to EXISTING root-owned directories without group/world write access. No automatic default destination is assumed. Both must be outside ALL current SynthContentLocations (not merely hidden in Synths). Work must share the target filesystem for atomic rename; recovery may be on another filesystem and uses verified copies. Missing/unsupported/noexec/readonly/space/path conditions refuse before service shutdown. Proposed paths require actual hardware verification, not a historical assumption.
 
-    sh uninstall.sh -t /YOUR/Synths
+From the extracted package on the device, AFTER authorization and fresh preflight:
 
--y skips confirmation. -n is for catalog batch callers ONLY: the caller must already have stopped MPC and must restart it even on error. Our transaction does not take over that service ownership.
+    GHOST_RECOVERY_ROOT=/APPROVED/Recovery GHOST_WORK_ROOT=/APPROVED/Work sh install.sh -t /ACTUAL/Synths
 
-The operation retains complete plugin/settings snapshots in Synths/.ghost-recovery/community-SESSION, including prior-active, backup, rollback.sh and logs/checkpoints. No backup is deleted automatically. Only GHOST's registry token and directory are changed. Unknown/modified user data are preserved; conflicting modified runtime files refuse before service stop. Backup and free storage are required. A custom matching runtime file cannot be distinguished from a package byte-identical copy; it has identical content and is covered by the retained full backup.
+Uninstall with uninstall.sh and the same roots/target. -y skips confirmation. -n is declared to catalog clients and requires the caller already stopped MPC; only that caller restarts it, including after failure. Standalone mode owns service stop/start. Do not use -n manually on a running host.
 
-Errors restore the exact known pre-operation registry and original directory, then restart the host unless -n. An independent detached watchdog detects worker loss/deadline; it cannot operate without power or repair failed storage. Recovery from an authorized root SSH shell:
+The initial settings copy is an observation only. After confirmed clean shutdown, a stable settings snapshot becomes the transaction baseline; shutdown preference writes are preserved. Plugin registry changes across shutdown refuse. Later concurrent settings changes are checked before each write. Recovery before registration does not restore old preferences; after registration it reverses only the known GHOST token when unrelated preferences changed. Conflicts never authorize a historical full-settings overwrite.
 
-    sh /YOUR/Synths/.ghost-recovery/community-EXACT_SESSION/rollback.sh /YOUR/Synths/.ghost-recovery/community-EXACT_SESSION
+Only byte-identical known package-owned files are replaced/removed. Unknown files and edited presets survive update/uninstall; modified runtime collisions refuse. Root-owned .ghost-owned.sha256 records ownership; the frozen prior-release list supports the exact earlier package. Missing/invalid ownership is not blindly inferred. Full current plugin backup is verified before shutdown. No projects or FXP state are converted; RRF1 downgrade compatibility is not automatic.
 
-Do not use another transaction's snapshot. Unexpected concurrent settings changes cause refusal/review rather than overwriting preferences. No projects or external FXP are converted. RRF1 project states may not load in older binaries; use copies. Published Quick Start and PDF describe existing controls. The separately named desktop recovery ZIP is the original computer-side package, not this device-shell installer.
+## Recovery
+
+Every transaction prints its exact external TX path. Packet metadata, verified backup, authoritative settings baseline, expected after-image, worker/guardian boot/PID/start identity and state checkpoints are retained. A single atomic recovery lease serializes worker, guardian and manual rollback. An active recovery owner is waited for, not raced. Unknown/corrupt lock ownership refuses for review. PID reuse and another boot do not masquerade as the original owner.
+
+For an authorized independent SSH shell after worker/guardian exit:
+
+    sh /APPROVED/Recovery/ghost-community-v2/tx-EXACT/recover.sh /APPROVED/Recovery/ghost-community-v2/tx-EXACT
+
+This completes an interrupted operation before releasing its stale global lock. To undo a committed trial, invoke its rollback.sh with the exact same TX. Never force a different transaction's snapshot over current data. Missing owner metadata, stale takeover/reaper or conflicting live files require manual inspection; do not blindly rmdir active locks.
+
+No guardian runs during power loss, repairs failed storage or proves GUI/audio health. Recovery persists for after SSH returns. Keep the original independent Mac backup and known-working desktop recovery package. Unexpected service/load failure: stop the trial, recover once, preserve evidence; no automatic second installation.
+
+## Retention and cleanup
+
+Backups live under Recovery/ghost-community-v2, transient same-filesystem trees under Work/ghost-work-v2, never under discovery roots. The old work tree is removed only after verified activation/host startup and an intact independent backup. Failed candidate trees may be retained in the work namespace for review.
+
+Limit: THREE retained transactions and 512 MiB recovery quota; a new operation refuses at the limit. No automatic deletion of user-containing recovery copies. Only older completed/restored TXs may be explicitly exported using cleanup.sh TX --export /NEW/INDEPENDENT/OUTSIDE-CONTENT --confirm; export bytes are verified before deleting exact self-owned TX/work trees. The newest recovery state and any incomplete/active transaction are protected. Do not delete historical backups without separate approval.

@@ -2,3 +2,6 @@
 /dist/
 __pycache__/
 *.pyc
+
+/evidence/hardening/sha256sum
+/hardware-sessions/

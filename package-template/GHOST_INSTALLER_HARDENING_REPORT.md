@@ -1,0 +1,41 @@
+# GHOST 2.4.2 community installer hardening
+
+**Status: offline candidate prepared; hardware preflight/validation requires explicit authorization.** Public v2.4.2 assets/tag and catalog PR #571 were not changed. No device connection/operation or maintainer message was performed. Development branch: codex/ghost-installer-hardening.
+
+## Findings and corrections
+
+| Maintainer finding | Demonstrated cause | Correction and evidence |
+|---|---|---|
+| Settings snapshot before host stop | Old transaction line 35 backed up running settings; line 115 rejected any shutdown save. Actual MPC rewrite is not yet observed. | Separate observed/preflight and authoritative stable post-stop baseline. Canonical plugin registry must remain identical through shutdown; preference-only saves survive. Later integrity checks remain. Tests 06,07,37,38,54. |
+| Concurrent rollback | Worker EXIT child and guardian could both invoke unprotected restoration after TERM/3 seconds. | Atomic mkdir recovery lease; owner packet atomically renamed into place; boot/PID/start identity; conservative unknown-owner treatment; verified dead-owner takeover; watcher waits for live recovery owner. All file/settings/service recovery is covered. Tests 08-12,22,39,45,49-52,55,56. |
+| Backups inside Synths | Hidden full copies were not proved invisible to scanner and accumulated forever. | Explicit recovery/work roots validated outside ALL current content paths and aliases. Work must share target filesystem; recovery copy is independently verified and can be cross-filesystem. Max three TX slots / 512 MiB quota, refusal at limit. Explicit complete export before cleanup; newest/incomplete protected. Tests 21,24,29,30,44. No hidden-folder assumption. |
+| Stale global lock | SIGKILL/power failure could leave no usable lock recovery path. | Process/boot/start/TX identity, guardian checks, finish incomplete transaction before stale lock reaping. Missing/corrupt initialization or abandoned takeover/reaper refuses for manual review. Dead lock removal is not restoration. Tests 08-10,13,31-33,39,43,50,51. |
+| DEFER, production bypass and mount checks | Wrapper lacked DEFER=; test env bypassed device checks; noexec/capacity/roots not enforced. | Real DEFER initialization/export with supported -n; batch caller retains service ownership through failures. Production rejects test/fault env switches. Root/ARM, strict supported XML, all package files/hashes, safe manifests/names, symlink/special-file checks, mount flags, namespace ownership, capacity and work filesystem gates. Tests 14-19,26-30,34,36,40-43,46,47,53. |
+
+The first concurrency experiment also exposed an initialization gap in the *new* lease: publishing an empty owner file before command substitution completed allowed it to be misread. The final implementation publishes owner metadata by atomic rename and tests three contenders. Unknown/inaccessible ownership is busy, not evidence of death. A later test also caught the inert command child consulting the dead worker during rollback; it now tracks its actual recovery parent. Both fixes are part of the final candidate, not claims that initial drafts passed. The authoritative run is frozen-matrix.log; intermediate logs retain their historical failures.
+
+## Validation results
+
+- **56 automated tests PASS** in the complete matrix; additional final targeted rechecks of concurrency, deferred handling, slow recovery and cleanup/pre-arm aborts passed. Full-size actual payload install/update/uninstall runs are included; most fault fixtures reduce resources to speed repeated filesystem tests while keeping the exact approved ARM binary and real metadata.
+- **366 runtime files byte-identical** to the published community ZIP, including GUI/JSON/FXP/resources and audio library. Audio SHA-256: `588019130b31ced7077f7e4afe35bd23b0753df7a2959e2af39fa825e1b81afd`.
+- Native POSIX `sh -n` passes. Pinned upstream ShellCheck 0.11.0 (download hash verified) reports **zero warnings/errors at warning severity**. No new runtime dependency is installed on the MPC.
+- Catalog checker: see evidence/hardening/catalog-check.json and catalog-warnings.txt. The two expected custom-script warnings remain and require maintainer review. Deferred support is now advertised and exercised, not physically certified.
+- Deterministic package rebuild/checksums and per-file published payload comparison are recorded in dist/evidence. No audio source rebuild/change was needed for this installer-only candidate; the existing approved ARM binary was reused. Catalog ELF/ABI/GLIBC classification is offline validation, not actual ARM shell execution.
+- Tests use local processes/signals and mocked root/ARM/service/mount/boot/proc behavior. Production scripts contain no test-mode bypass. Harness instrumentation exists only in temporary copies. Exact MPC BusyBox configuration, service timing, actual shutdown writes, scanner behavior and mount layout are **NOT TESTED physically**.
+- Read-only client regression distinguishes empty/failed SSH transport from nonempty invalid XML; no actual SSH connection was made.
+
+## State and recovery boundary
+
+A verified complete backup and staged after-image precede service shutdown. The authoritative settings baseline is after confirmed stop and stable reads. Only GHOST edits are generated; foreign registry/preferences are proved unchanged. Any later unexpected modification refuses. Before own register.intent, recovery leaves settings untouched; after intent, exact known after-image can restore baseline, or a known GHOST-token inverse preserves new unrelated preferences. Unknown GHOST registry/file changes require review, not overwrite. Discovery roots are revalidated before starting the host, including recovery; if a concurrent critical change exposes recovery/work as content, the service is deliberately not started and a review lock is retained. This exceptional NO-GO requires administrator review; host recovery is not falsely reported as successful.
+
+Worker, guardian and manual recovery share one recovery lease. Service operations have bounded waits. Ownership includes boot and process-start identity; unknown state is conservative refusal. Original plugin rename uses same-filesystem work; independent backup restore is verified before activation. Retained partial work/failed candidates stay outside discovery roots. No broad cleanup on Synths exists.
+
+Retention is bounded by refusal, NOT automatic deletion. Newest/incomplete recovery is never cleaned. An explicitly authorized export copies transaction and work data to a new independent destination outside discovery, verifies both inventories, then removes only exact self-owned older completed TX/work trees. The exported copy remains recoverable. No claim is made for running software during power loss, repairing storage failure, arbitrary root modifications, or atomic backup/file restoration across different filesystems. Cross-filesystem recovery storage is allowed precisely because activation uses a distinct verified same-filesystem work root.
+
+Partially initialized locks or abandoned reaper/takeover metadata are retained for inspection rather than force-removed. This can require manual recovery; it cannot be safely inferred as completed restoration. No firmware/boot service is modified.
+
+## Hardware/publication gate
+
+All fresh hardware observations are NOT TESTED in GHOST_HARDWARE_TEST_RESULTS.md. Historical settings only informed the parser and discovery-root design; they were not adopted as a current baseline. Explicit root configuration must be verified against current device paths before the first mutation. The proposed /storage roots in the guide are unverified and are not automatically provisioned.
+
+Next step: owner-authorized read-only preflight using tools/ghost_hardware_preflight.py. Then review evidence and separately authorize provisioning, upload and controlled install/update/uninstall/restoration. Do not post MAINTAINER_RESPONSE_DRAFT.md or update/publish the PR/release until the owner approves evidence and publication. Maintainer's catalog approval and physical install/update/uninstall evidence remain pending.

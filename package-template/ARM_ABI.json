@@ -1,0 +1,16 @@
+{
+  "binary_sha256": "588019130b31ced7077f7e4afe35bd23b0753df7a2959e2af39fa825e1b81afd",
+  "ELF": "32-bit little-endian ARM",
+  "hard_float": true,
+  "exports": [
+    "VSTPluginMain"
+  ],
+  "needed": [
+    "libm.so.6",
+    "libpthread.so.0",
+    "libc.so.6"
+  ],
+  "max_glibc": "2.27",
+  "executed_on_ARM": false,
+  "catalog_tools_ref": "a09c6e6b7f796ed477b0a5e16637c79231f0c032"
+}
