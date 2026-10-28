@@ -1,3 +1,11 @@
+# Installer hardening development candidate - LOCAL / UNPUBLISHED
+
+This branch prepares GHOST 2.4.2 installer2-rc1 in response to PR #571. The published v2.4.2 release/tag/assets are unchanged. No MPC modification or public update was executed. A read-only preflight was completed; installation is blocked until the owner authorizes recovery-root provisioning and revalidation.
+
+Start with GHOST_INSTALLER_HARDENING_REPORT.md, GHOST_MPC_HARDWARE_VALIDATION.md and GHOST_HARDWARE_TEST_RESULTS.md. package-template is the canonical new runtime installer; community/device-ghost retains the historical v2.4.2 implementation for comparison. Use rebuild.py only to reproduce the already approved binary, then package.py --out dist to generate the clearly named installer candidate. No new audio build is required if the exact approved binary is supplied in rebuild/ghost.so.
+
+---
+
 # GHOST 2.4.2 - Community beta
 
 A stereo buffer glitch effect: live repeat/stutter, reverse and generative rhythmic interventions. Original MPC One / Hakai 3.9.1 audio is user-tested. Same BOTH FIX binary, UID and controls. No new DSP, GUI, parameters or presets.

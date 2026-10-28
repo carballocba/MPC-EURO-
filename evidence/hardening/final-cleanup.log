@@ -1,0 +1,9 @@
+test_21_cycles_and_retention (__main__.Tests.test_21_cycles_and_retention) ... ok
+test_36_stage_failure (__main__.Tests.test_36_stage_failure) ... ok
+test_40_actual_copy_error (__main__.Tests.test_40_actual_copy_error) ... ok
+test_44_cleanup_newest_refused (__main__.Tests.test_44_cleanup_newest_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 11.265s
+
+OK

@@ -1,0 +1,29 @@
+test_01_fresh (__main__.Tests.test_01_fresh) ... ok
+test_49_timeout_slow_rollback (__main__.Tests.test_49_timeout_slow_rollback) ... ok
+test_55_term_during_systemctl (__main__.Tests.test_55_term_during_systemctl) ... ok
+test_56_kill_orphaned_systemctl (__main__.Tests.test_56_kill_orphaned_systemctl) ... FAIL
+
+======================================================================
+FAIL: test_56_kill_orphaned_systemctl (__main__.Tests.test_56_kill_orphaned_systemctl)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<SOURCE_ROOT>/tests/installer-hardening/run.py", line 239, in test_56_kill_orphaned_systemctl
+    def test_56_kill_orphaned_systemctl(self):self.signal_during_service_start(signal.SIGKILL)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "<SOURCE_ROOT>/tests/installer-hardening/run.py", line 237, in signal_during_service_start
+    p.send_signal(sig);p.wait(timeout=20);tx=f.tx();f.waitfor(tx/'rollback.done');self.assertEqual(old,inventory(f.target));events=(f.r/'events').read_text();self.assertNotIn('start end '+first,events);self.assertTrue(json.loads((f.r/'service.json').read_text())['active'])
+                                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE_ROOT>/tests/installer-hardening/run.py", line 63, in waitfor
+    raise AssertionError('checkpoint not reached '+str(p)+'\n'+'\n'.join(f.read_text()[-1600:] for f in self.r.glob('out-*')))
+AssertionError: checkpoint not reached <FIXTURE_ROOT>/recovery/ghost-community-v2/tx-20261028T033439Z-95108/rollback.done
+2026-10-28T03:34:39Z BACKUP VERIFIED: <FIXTURE_ROOT>/recovery/ghost-community-v2/tx-20261028T033439Z-95108; authoritative settings baseline pending host shutdown
+2026-10-28T03:34:39Z prepared
+2026-10-28T03:34:40Z host-stopped
+2026-10-28T03:34:40Z activating
+2026-10-28T03:34:40Z starting
+
+
+----------------------------------------------------------------------
+Ran 4 tests in 30.081s
+
+FAILED (failures=1)

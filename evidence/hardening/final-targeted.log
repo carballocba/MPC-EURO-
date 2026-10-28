@@ -1,0 +1,9 @@
+test_12_concurrent_rollback (__main__.Tests.test_12_concurrent_rollback) ... ok
+test_28_defer (__main__.Tests.test_28_defer) ... ok
+test_46_defer_failure (__main__.Tests.test_46_defer_failure) ... ok
+test_49_timeout_slow_rollback (__main__.Tests.test_49_timeout_slow_rollback) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 9.044s
+
+OK

@@ -1,6 +1,6 @@
 # GHOST 2.4.2 community installer hardening
 
-**Status: offline candidate prepared; hardware preflight/validation requires explicit authorization.** Public v2.4.2 assets/tag and catalog PR #571 were not changed. No device connection/operation or maintainer message was performed. Development branch: codex/ghost-installer-hardening.
+**Status: offline candidate prepared; hardware preflight/validation requires explicit authorization.** Public v2.4.2 assets/tag and catalog PR #571 were not changed. No device mutation, installer/service operation or maintainer message was performed. The Phase 2 read-only preflight was performed after offline validation; details and the NO-GO root-provisioning checkpoint are in GHOST_HARDWARE_TEST_RESULTS.md. Development branch: codex/ghost-installer-hardening.
 
 ## Findings and corrections
 
@@ -17,6 +17,7 @@ The first concurrency experiment also exposed an initialization gap in the *new*
 ## Validation results
 
 - **56 automated tests PASS** in the complete matrix; additional final targeted rechecks of concurrency, deferred handling, slow recovery and cleanup/pre-arm aborts passed. Full-size actual payload install/update/uninstall runs are included; most fault fixtures reduce resources to speed repeated filesystem tests while keeping the exact approved ARM binary and real metadata.
+- The existing **23 installer simulations against the unchanged public ZIP also PASS** as a historical baseline; this does not cure the old reviewed races or validate the new installer physically.
 - **366 runtime files byte-identical** to the published community ZIP, including GUI/JSON/FXP/resources and audio library. Audio SHA-256: `588019130b31ced7077f7e4afe35bd23b0753df7a2959e2af39fa825e1b81afd`.
 - Native POSIX `sh -n` passes. Pinned upstream ShellCheck 0.11.0 (download hash verified) reports **zero warnings/errors at warning severity**. No new runtime dependency is installed on the MPC.
 - Catalog checker: see evidence/hardening/catalog-check.json and catalog-warnings.txt. The two expected custom-script warnings remain and require maintainer review. Deferred support is now advertised and exercised, not physically certified.
@@ -36,6 +37,6 @@ Partially initialized locks or abandoned reaper/takeover metadata are retained f
 
 ## Hardware/publication gate
 
-All fresh hardware observations are NOT TESTED in GHOST_HARDWARE_TEST_RESULTS.md. Historical settings only informed the parser and discovery-root design; they were not adopted as a current baseline. Explicit root configuration must be verified against current device paths before the first mutation. The proposed /storage roots in the guide are unverified and are not automatically provisioned.
+Fresh read-only preflight confirmed the original MPC One/ARMv7, active stable observed service, 83 registrations and the expected 366-file GHOST. The independent Mac backup matched every current file. Proposed external recovery/work roots are absent, so installation is NO-GO pending explicit provisioning approval. All actual install/update/uninstall/audio/session tests remain NOT TESTED. Historical settings only informed parser/design; no old settings baseline was restored. Explicit root configuration must be verified against current device paths before the first mutation. The proposed /storage roots in the guide are unverified and are not automatically provisioned.
 
-Next step: owner-authorized read-only preflight using tools/ghost_hardware_preflight.py. Then review evidence and separately authorize provisioning, upload and controlled install/update/uninstall/restoration. Do not post MAINTAINER_RESPONSE_DRAFT.md or update/publish the PR/release until the owner approves evidence and publication. Maintainer's catalog approval and physical install/update/uninstall evidence remain pending.
+Next step: explicit owner approval to provision only the two named roots, then repeat read-only preflight into a new private session. Separately approve upload and controlled install/update/uninstall/restoration after reviewing the fresh GO evidence. Do not post MAINTAINER_RESPONSE_DRAFT.md or update/publish the PR/release until the owner approves evidence and publication. Maintainer's catalog approval and physical install/update/uninstall evidence remain pending.

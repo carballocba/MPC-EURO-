@@ -1,0 +1,6 @@
+{
+  "tests": 23,
+  "failures": 0,
+  "target": "unchanged public v2.4.2 ZIP (historical harness baseline, NOT hardened candidate or physical hardware)",
+  "device_access": false
+}

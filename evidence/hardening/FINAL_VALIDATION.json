@@ -1,0 +1,21 @@
+{
+  "candidate": "GHOST 2.4.2 installer2-rc1",
+  "new_unique_tests_pass": 56,
+  "historical_published_zip_tests_pass": 23,
+  "shellcheck": "0 warnings/errors at warning severity",
+  "posix_syntax": "PASS",
+  "runtime_files_unchanged": 366,
+  "binary_sha256": "588019130b31ced7077f7e4afe35bd23b0753df7a2959e2af39fa825e1b81afd",
+  "catalog_warnings": [
+    "custom install.sh",
+    "custom uninstall.sh"
+  ],
+  "catalog_errors": 0,
+  "defer": true,
+  "actual_readonly_preflight": "completed; plugin/service/settings stable during observation; Mac backup verified",
+  "hardware_mutation": "NONE",
+  "install_update_uninstall_audio_physical": "NOT TESTED",
+  "hardware_install_decision": "NO-GO: proposed recovery/work roots do not exist; explicit provisioning approval required",
+  "published_v2_4_2_changed": false,
+  "maintainer_response_posted": false
+}

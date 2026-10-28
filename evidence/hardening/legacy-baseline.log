@@ -1,0 +1,24 @@
+Testing clean
+Testing upgrade
+Testing reinstall
+Testing uninstall
+Testing copy
+Testing registry
+Testing stopped
+Testing renamed
+Testing activated
+Testing registered
+Testing started
+Testing collision
+Testing foreign-inside
+Testing defer
+Testing rollback-twice
+Testing watchdog-loss
+Testing uninstall-fail-copy
+Testing uninstall-fail-registry
+Testing uninstall-fail-stopped
+Testing uninstall-fail-renamed
+Testing uninstall-fail-activated
+Testing uninstall-fail-registered
+Testing uninstall-fail-started
+23 scenarios PASS
