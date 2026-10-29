@@ -1,0 +1,15 @@
+test_encoded_mount_complete_install (__main__.TransactionRegression.test_encoded_mount_complete_install) ... ok
+test_actual_overlap (__main__.XMLPaths.test_actual_overlap) ... ok
+test_canonical_alias (__main__.XMLPaths.test_canonical_alias) ... ok
+test_distinct_unicode_paths (__main__.XMLPaths.test_distinct_unicode_paths) ... ok
+test_encoded_line_injection (__main__.XMLPaths.test_encoded_line_injection) ... ok
+test_encoded_separators_and_traversal (__main__.XMLPaths.test_encoded_separators_and_traversal) ... ok
+test_invalid_entities (__main__.XMLPaths.test_invalid_entities) ... ok
+test_real_decimal_hex_and_literal (__main__.XMLPaths.test_real_decimal_hex_and_literal) ... ok
+test_standard_and_single_decode (__main__.XMLPaths.test_standard_and_single_decode) ... ok
+test_unicode_boundaries (__main__.XMLPaths.test_unicode_boundaries) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 2.514s
+
+OK

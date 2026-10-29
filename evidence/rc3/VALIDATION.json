@@ -1,0 +1,45 @@
+{
+  "candidate": "GHOST-2.4.2-installer2-rc3-mpc-armv7.zip",
+  "sha256": "0920fde1c908e9a3dcdde5182dffeb206b63b8e706e16c7fb46839a9b0be0b7e",
+  "audit_actual_files": 366,
+  "actual_fxp": 52,
+  "actual_byte_mismatches_identified": [
+    "plugin-meta.xml exact destination expansion",
+    "mpc-plugin.json only pinned about/requires descriptions"
+  ],
+  "new_runtime_payload_changes": 0,
+  "binary_sha256": "588019130b31ced7077f7e4afe35bd23b0753df7a2959e2af39fa825e1b81afd",
+  "legacy_migration_tests": 18,
+  "transactional_regressions": 56,
+  "xml_path_regressions": 10,
+  "total_offline_tests_pass": 84,
+  "historical23_unchanged_public_zip": "not rerun; prior result retained separately",
+  "shellcheck": "PASS 0 warnings/errors at warning severity",
+  "shell_syntax": "PASS",
+  "catalog_errors": 0,
+  "catalog_warnings": [
+    "custom install.sh",
+    "custom uninstall.sh"
+  ],
+  "native_readonly_classification": "PASS 366 mappings,311 recognized runtime,55 retained presets/indexes,0 conflicts",
+  "native_registry_prediction": {
+    "install": 83,
+    "uninstall": 82,
+    "foreign_entries_preserved": 82
+  },
+  "native_seven_paths": "PASS",
+  "physical_operations_executed": false,
+  "service_operations_executed": false,
+  "device_files_modified": false,
+  "pending_physical_tests": [
+    "install over desktop predecessor",
+    "GUI/touch/QLinks/audio smoke",
+    "same-version community update",
+    "uninstall",
+    "controlled restoration/recovery"
+  ],
+  "known_retention_requirement": "after first successful rc3 commit, explicitly export/verify older completed rc2 packet before completing three operations; no cleanup performed",
+  "decision": "GO for separately authorized supervised sequence with fresh preflight and explicit verified old-packet export; NOT release-publication approval",
+  "published_release_and_PR_changed": false,
+  "all83_binaries_stable_during_final_dry_run": true
+}

@@ -1,0 +1,12 @@
+{
+  "source": "explicit owner confirmation in chat",
+  "scope": "basic functional smoke test; not exhaustive parameter validation",
+  "GUI": "PASS",
+  "touchscreen": "PASS",
+  "QLinks": "PASS",
+  "audio_processing_and_mix": "PASS",
+  "observed_stability": "PASS",
+  "instance_closed": true,
+  "playback_stopped": true,
+  "unsaved_changes": false
+}

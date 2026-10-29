@@ -1,0 +1,9 @@
+{
+  "source": "explicit owner confirmation in chat",
+  "result": "PASS",
+  "GUI": "PASS",
+  "touch_and_QLinks": "PASS",
+  "audio_loop_and_mix": "PASS",
+  "unexpected_dropouts": "none reported",
+  "scope": "basic restored-installation functional smoke test; not exhaustive parameter validation"
+}

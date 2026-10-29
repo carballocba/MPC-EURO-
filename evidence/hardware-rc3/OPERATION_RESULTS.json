@@ -1,0 +1,71 @@
+{
+  "operations": [
+    {
+      "stage": "retention",
+      "status": "PASS",
+      "exit": 0,
+      "export": "/storage/GHOST-Recovery/export-rc2-aborted-20261028T125618Z-10574"
+    },
+    {
+      "stage": "predecessor_restore_A",
+      "exit": 0,
+      "transaction": "/storage/GHOST-Recovery/ghost-community-v2/tx-20261029T051548Z-433",
+      "status": "PASS",
+      "prefs_before_sha256": "9e05c18a6780b070d8d1d8a897fbfdb81745f59a1dfe64ed2ec102e69484d30f",
+      "prefs_after_sha256": "3e63a9f31411b983c4a6b7ce5d698d0d5fccfaecc67d0548eef9db27098a21b1"
+    },
+    {
+      "stage": "migration_B",
+      "exit": 0,
+      "transaction": "/storage/GHOST-Recovery/ghost-community-v2/tx-20261029T073707Z-22766",
+      "status": "PASS",
+      "files": 368,
+      "registry": 83,
+      "watchdog": "ready, committed, worker done, guardian exited",
+      "shutdown_rewrote_settings": false,
+      "non_GHOST_transaction_structure": "IDENTICAL"
+    },
+    {
+      "stage": "uninstall_C",
+      "exit": 0,
+      "transaction": "/storage/GHOST-Recovery/ghost-community-v2/tx-20261029T073833Z-29781",
+      "status": "PASS",
+      "files": 56,
+      "registry": 82,
+      "watchdog": "ready, committed, worker done, guardian exited",
+      "shutdown_rewrote_settings": false,
+      "non_GHOST_transaction_structure": "IDENTICAL"
+    },
+    {
+      "stage": "restore_D_community",
+      "exit": 0,
+      "transaction": "/storage/GHOST-Recovery/ghost-community-v2/tx-20261029T073833Z-29781",
+      "status": "PASS",
+      "prefs_before_sha256": "2f93439fa605eaf8c77499474cdcb2acc8fe8cf2cfdd7e9f95658123df52b529",
+      "prefs_after_sha256": "9e05c18a6780b070d8d1d8a897fbfdb81745f59a1dfe64ed2ec102e69484d30f"
+    },
+    {
+      "stage": "restore_D_original",
+      "exit": 0,
+      "transaction": "/storage/GHOST-Recovery/ghost-community-v2/tx-20261029T073707Z-22766",
+      "status": "PASS",
+      "prefs_before_sha256": "9e05c18a6780b070d8d1d8a897fbfdb81745f59a1dfe64ed2ec102e69484d30f",
+      "prefs_after_sha256": "3e63a9f31411b983c4a6b7ce5d698d0d5fccfaecc67d0548eef9db27098a21b1"
+    }
+  ],
+  "physical_extra_GUI_audio": "NOT TESTED",
+  "status": "TECHNICAL_SEQUENCE_PASS; AWAITING OWNER RESTORED GUI/AUDIO CONFIRMATION",
+  "migration_B_transaction": "/storage/GHOST-Recovery/ghost-community-v2/tx-20261029T073707Z-22766",
+  "update_scope": "legacy-to-community package-format migration; product/audio version remains 2.4.2; not semantic-version upgrade",
+  "uninstall_C_transaction": "/storage/GHOST-Recovery/ghost-community-v2/tx-20261029T073833Z-29781",
+  "final_files": 366,
+  "final_FXP": 52,
+  "final_registry": 83,
+  "foreign_plugins": 82,
+  "final_binary_sha256": "588019130b31ced7077f7e4afe35bd23b0753df7a2959e2af39fa825e1b81afd",
+  "final_host": "MainPID=6232\nNRestarts=0\nActiveState=active\nSubState=running\nd6b7aa29-6c2b-41d2-805b-d4c3f565c224\n",
+  "final_settings_sha256": "3e63a9f31411b983c4a6b7ce5d698d0d5fccfaecc67d0548eef9db27098a21b1",
+  "final_original_metadata": "IDENTICAL",
+  "canary_removed": true,
+  "original_backup_retained": true
+}

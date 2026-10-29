@@ -28,7 +28,8 @@ cmp -s "$listed" "$actual" || { rm -f "$listed" "$actual"; fail 'unlisted or mis
 rm -f "$listed" "$actual"
 manifest_paths payload.sha256 && manifest_paths legacy-owned.sha256 || fail 'invalid package ownership list'
 [ "$(hash "portable/$SKIN/ghost.so")" = 588019130b31ced7077f7e4afe35bd23b0753df7a2959e2af39fa825e1b81afd ] || fail 'wrong audio binary'
-awk -v report=registry -f xml_contract.awk "$SETTINGS" >/dev/null || fail 'unsupported/invalid XML'
+registry=$(LC_ALL=C awk -v report=registry -f xml_contract.awk "$SETTINGS") || fail 'unsupported/invalid XML'
+registry_scope "$registry" || fail 'conflicting GHOST registry ownership'
 RECOVERY=${GHOST_RECOVERY_ROOT:-};WORKROOT=${GHOST_WORK_ROOT:-$RECOVERY}
 for p in "$RECOVERY" "$WORKROOT";do safe_path "$p" && [ -d "$p" ] && [ ! -L "$p" ] || fail 'explicit existing recovery/work roots required';done
 RECOVERY=$(canon "$RECOVERY");WORKROOT=$(canon "$WORKROOT")
@@ -38,14 +39,15 @@ for p in "$RECOVERY" "$WORKROOT";do
 done
 # Validate all configured locations; unknown configuration refuses, never assumes hidden folders are safe.
 CONTENT=$(mktemp);trap 'rm -f "$CONTENT"' EXIT
-awk -v report=locations -f xml_contract.awk "$SETTINGS" > "$CONTENT" || fail 'cannot parse content roots'
+LC_ALL=C awk -v report=locations -f xml_contract.awk "$SETTINGS" > "$CONTENT" || fail 'cannot parse content roots'
 [ -s "$CONTENT" ] || fail 'missing SynthContentLocations'
 printf '%s\n' "$SYNTHS" >> "$CONTENT"
-outside_content "$RECOVERY" && outside_content "$WORKROOT" || fail 'recovery/work root overlaps a discovery path'
+outside_content "$RECOVERY" && outside_content "$WORKROOT" || fail 'discovery path validation failed (see specific reason above)'
 mount_check "$RECOVERY" write && mount_check "$WORKROOT" write || fail 'readonly recovery/work mount'
 [ "$(stat -c %d "$WORKROOT")" = "$(stat -c %d "$SYNTHS")" ] || fail 'work root must share target filesystem'
 SERVICE=acvs;systemctl cat acvs >/dev/null 2>&1 || SERVICE=inmusic-mpc
 if [ "$DEFER" = 0 ];then systemctl is-active --quiet "$SERVICE" && pidof MPC >/dev/null || fail 'host inactive';else ! pidof MPC >/dev/null || fail '-n requires stopped host';fi
+if [ -d "$TARGET" ];then sh ./adoption.sh "$TARGET" "$SYNTHS" "$ACTION" >/dev/null || fail 'installation is not safely adoptable';fi
 [ "$YES" = 1 ] || { printf 'Save project. Continue GHOST-only %s? [y/N] ' "$ACTION";read -r a;[ "$a" = y ]||exit 1; }
 # Managed namespaces never adopt pre-existing user folders.
 for p in "$RECOVERY/ghost-community-v2" "$WORKROOT/ghost-work-v2";do
@@ -95,12 +97,15 @@ EXISTED=0;[ ! -d "$TARGET" ]||EXISTED=1;echo "$EXISTED" > "$TX/existed"
 mkdir "$WORK/stage"
 if [ "$EXISTED" = 1 ];then
  cp -a "$TARGET" "$TX/backup";inventory "$TARGET" > "$TX/files.before";verify_tree "$TX/backup" "$TX/files.before"||fail 'backup mismatch';cp -a "$TARGET/." "$WORK/stage/"
- OWN=legacy-owned.sha256;[ ! -f "$TARGET/.ghost-owned.sha256" ]||OWN="$TARGET/.ghost-owned.sha256";manifest_paths "$OWN"||fail 'invalid installed ownership'
- while IFS= read -r row;do h=${row%% *};p=${row#*  };[ ! -f "$WORK/stage/$p" ]||{ [ "$(hash "$WORK/stage/$p")" != "$h" ]||rm "$WORK/stage/$p"; };done < "$OWN"
+ sh ./adoption.sh "$TARGET" "$SYNTHS" "$ACTION" > "$TX/adoption.plan" || fail 'installation is not safely adoptable'
+ tab=$(printf '\t')
+ while IFS="$tab" read -r disposition p;do
+  case "$disposition" in REMOVE-OWNED)rm "$WORK/stage/$p";;ADD|ABSENT|KEEP-PRESET);;*)fail 'invalid adoption plan';;esac
+ done < "$TX/adoption.plan"
 fi
 rm -f "$WORK/stage/.ghost-owned.sha256"
 if [ "$ACTION" = install ];then
- while IFS= read -r row;do h=${row%% *};p=${row#*  };if [ -e "$WORK/stage/$p" ];then case "$p" in Presets/*|'Preset Library/'*|'Performance Presets/'*)continue;;*)fail "modified runtime collision: $p";;esac;fi;mkdir -p "$(dirname "$WORK/stage/$p")";cp -p "portable/$SKIN/$p" "$WORK/stage/$p";done < payload.sha256
+ while IFS= read -r row;do p=${row#*  };if [ -e "$WORK/stage/$p" ];then case "$p" in Presets/*|'Preset Library/'*|'Performance Presets/'*)continue;;*)fail "modified runtime collision: $p";;esac;fi;mkdir -p "$(dirname "$WORK/stage/$p")";cp -p "portable/$SKIN/$p" "$WORK/stage/$p";done < payload.sha256
  cp payload.sha256 "$WORK/stage/.ghost-owned.sha256"
 fi
 inventory "$WORK/stage" > "$TX/files.after"

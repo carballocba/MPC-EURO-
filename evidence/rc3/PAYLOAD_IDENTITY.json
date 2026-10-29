@@ -1,0 +1,16 @@
+{
+  "runtime_files_byte_identical": 366,
+  "binary_sha256": "588019130b31ced7077f7e4afe35bd23b0753df7a2959e2af39fa825e1b81afd",
+  "ARM": "ELF32 ARM hard-float",
+  "UID": "47485354 / 1195922260",
+  "changed_non_runtime_files": [
+    "GHOST-2.4.2/INSTALL.md",
+    "GHOST-2.4.2/LEGACY_MIGRATION.md",
+    "GHOST-2.4.2/SHA256SUMS",
+    "GHOST-2.4.2/adoption.sh",
+    "GHOST-2.4.2/common.sh",
+    "GHOST-2.4.2/mpc-plugin.json",
+    "GHOST-2.4.2/transaction.sh"
+  ],
+  "zip_sha256": "0920fde1c908e9a3dcdde5182dffeb206b63b8e706e16c7fb46839a9b0be0b7e"
+}

@@ -1,0 +1,2 @@
+warning: install.sh differs from this repo's current template (older release tool, or modified): review it
+warning: uninstall.sh differs from this repo's current template (older release tool, or modified): review it

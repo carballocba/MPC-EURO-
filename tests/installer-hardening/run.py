@@ -3,7 +3,8 @@ import os,sys,time,pathlib,tempfile,subprocess,shutil,json,hashlib,signal,unitte
 HERE=pathlib.Path(__file__).resolve().parent;R=HERE.parents[1];T=R/'package-template';F='MPC-EURO - VST - GHOST';OUT=R/'evidence/hardening';OUT.mkdir(parents=True,exist_ok=True)
 SUM=shutil.which('sha256sum')
 if not SUM:
- SUM=str(OUT/'sha256sum');subprocess.run(['cc','-Wno-deprecated-declarations',str(HERE/'sha256sum-macos.c'),'-o',SUM],check=True)
+ _SUM_DIR=tempfile.TemporaryDirectory(prefix='ghost-test-sha-')
+ SUM=str(pathlib.Path(_SUM_DIR.name)/'sha256sum');subprocess.run(['cc','-Wno-deprecated-declarations',str(HERE/'sha256sum-macos.c'),'-o',SUM],check=True)
 def inventory(p):return {str(f.relative_to(p)):(hashlib.sha256(f.read_bytes()).hexdigest(),f.stat().st_mode&0o777) for f in p.rglob('*') if f.is_file()} if p.exists() else {}
 def sums(p):
  (p/'SHA256SUMS').unlink(missing_ok=True);(p/'SHA256SUMS').write_text(''.join(hashlib.sha256(f.read_bytes()).hexdigest()+'  '+f.relative_to(p).as_posix()+'\n' for f in sorted(p.rglob('*')) if f.is_file()))

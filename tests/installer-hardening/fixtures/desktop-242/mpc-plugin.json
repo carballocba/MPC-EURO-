@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "ghost",
+  "name": "GHOST",
+  "version": "2.4.2",
+  "kind": "effect",
+  "uid": "47485354",
+  "manufacturer": "MPC-EURO",
+  "layout": "portable",
+  "so": "ghost.so",
+  "skin": "MPC-EURO - VST - GHOST",
+  "folder": "portable/MPC-EURO - VST - GHOST",
+  "extras": [],
+  "user_data": [],
+  "arch": "armv7",
+  "max_glibc": "2.27",
+  "os_compat": [
+    "3.x"
+  ],
+  "param_compat": 2,
+  "about": "GHOST BOTH FIX; guarded desktop installation, hardware validation pending.",
+  "requires": "Python3 and SSH on computer; existing BusyBox/systemctl tools on Gen1 device; guarded controller only.",
+  "source_repo": "carballocba/MPC-EURO-",
+  "license": "GPL-3.0-only",
+  "cpu": null
+}

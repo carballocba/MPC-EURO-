@@ -1,0 +1,46 @@
+{
+  "version": "2.4.2",
+  "size": 831820,
+  "defer": true,
+  "sha256": "0920fde1c908e9a3dcdde5182dffeb206b63b8e706e16c7fb46839a9b0be0b7e",
+  "param_compat": 2,
+  "max_glibc": "2.27",
+  "cpu": null,
+  "manifest": {
+    "schema": 1,
+    "id": "ghost",
+    "name": "GHOST",
+    "version": "2.4.2",
+    "kind": "effect",
+    "uid": "47485354",
+    "manufacturer": "MPC-EURO",
+    "layout": "portable",
+    "so": "ghost.so",
+    "skin": "MPC-EURO - VST - GHOST",
+    "folder": "portable/MPC-EURO - VST - GHOST",
+    "extras": [],
+    "user_data": [],
+    "arch": "armv7",
+    "max_glibc": "2.27",
+    "os_compat": [
+      "3.x"
+    ],
+    "param_compat": 2,
+    "about": "GHOST BOTH FIX stereo glitch effect; identical approved audio binary.",
+    "requires": "Gen1 MPC with root shell access, BusyBox and systemctl. Device-side transactional installer.",
+    "source_repo": "carballocba/MPC-EURO-",
+    "license": "GPL-3.0-only",
+    "cpu": null,
+    "installer_revision": "2.4.2-installer2-rc3"
+  },
+  "os_compat": [
+    "3.x"
+  ],
+  "os_compat_why": [
+    "TUI:actions[] version 2 (2.15.1 uses 1)",
+    "TUI:data:Button version 2 (2.15.1 uses 1)",
+    "TUI:data:Knob version 5 (2.15.1 uses 1, 2)",
+    "TUI:tabs[] version 3 (2.15.1 uses 1)",
+    "TUI:value version 4 (2.15.1 uses 1, 2)"
+  ]
+}

@@ -15,7 +15,7 @@ BASE=$(dirname "$TX");latest=$(for t in "$BASE"/tx-*;do
 done | LC_ALL=C sort | tail -n 1)
 [ "$latest" != "$TX" ]||fail 'cannot remove newest recovery point'
 CONTENT=$(mktemp);trap 'rm -f "$CONTENT"' EXIT
-awk -v report=locations -f "$TX/xml_contract.awk" "$SETTINGS" > "$CONTENT" || fail 'content roots unavailable'
+LC_ALL=C awk -v report=locations -f "$TX/xml_contract.awk" "$SETTINGS" > "$CONTENT" || fail 'content roots unavailable'
 printf '%s\n' "$(dirname "$TARGET")" >> "$CONTENT"
 outside_content "$(resolve_path "$EXPORT")" || fail 'export overlaps content discovery'
 check_names "$TX" && check_names "$WORK" || fail 'export contains unsupported files'

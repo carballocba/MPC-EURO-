@@ -1,0 +1,7 @@
+2026-10-29T05:16:04Z BACKUP VERIFIED: /storage/GHOST-Recovery/ghost-community-v2/tx-20261029T051548Z-433; authoritative settings baseline pending host shutdown
+2026-10-29T05:16:04Z prepared
+2026-10-29T05:16:06Z host-stopped
+2026-10-29T05:16:22Z activating
+2026-10-29T05:16:23Z starting
+2026-10-29T05:16:42Z committed
+2026-10-29T05:16:44Z COMMITTED: /storage/GHOST-Recovery/ghost-community-v2/tx-20261029T051548Z-433; retention: max 3 transactions / 512 MiB; no automatic backup deletion

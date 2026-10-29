@@ -83,7 +83,7 @@ stop_host() {
 }
 content_roots_now() { (
  CONTENT=$(mktemp) || exit 1;trap 'rm -f "$CONTENT"' EXIT
- awk -v report=locations -f "$TX/xml_contract.awk" "$SETTINGS" > "$CONTENT" || exit 1
+ LC_ALL=C awk -v report=locations -f "$TX/xml_contract.awk" "$SETTINGS" > "$CONTENT" || exit 1
  [ -s "$CONTENT" ] || exit 1
  printf '%s\n' "$(dirname "$TARGET")" >> "$CONTENT"
  outside_content "$TX" && outside_content "$WORK"
@@ -131,10 +131,10 @@ outside_content() {
  root=$1
  while IFS= read -r loc;do
   [ -n "$loc" ] || continue
-  safe_path "$loc" || return 1
+  safe_path "$loc" || { log "Unsupported discovery path encoding or unsafe characters" >&2;return 1; }
   c=$(resolve_path "$loc") || return 1
-  case "$root/" in "$c/"*) return 1;;esac
-  case "$c/" in "$root/"*) return 1;;esac
+  case "$root/" in "$c/"*) log "Recovery/work root is within a discovery path" >&2;return 1;;esac
+  case "$c/" in "$root/"*) log "Discovery path is within a recovery/work root" >&2;return 1;;esac
  done < "$CONTENT"
 }
 mount_options() {
@@ -143,3 +143,10 @@ mount_options() {
 mount_check() { o=$(mount_options "$1") || return 1;case ",$o," in *,ro,*) return 1;;esac;if [ "$2" = exec ];then case ",$o," in *,noexec,*)return 1;;esac;fi; }
 free_kb() { df -Pk "$1" | awk 'NR==2 {print $4}'; }
 kb() { du -sk "$1" | awk '{print $1}'; }
+# Registry conflicts must refuse before stop; do not silently replace another UID owner.
+registry_scope() {
+ printf '%s\n' "$1" | awk -v file="$FILE" -v dir="$TARGET/" '
+ index($0," uid=\"47485354\"") {n++;if(!index($0," file=\"" file "\""))bad=1}
+ !index($0," uid=\"47485354\"") && index($0," file=\"" dir) {bad=1}
+ END {exit (bad || n>1)}'
+}

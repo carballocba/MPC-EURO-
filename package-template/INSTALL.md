@@ -35,3 +35,10 @@ No guardian runs during power loss, repairs failed storage or proves GUI/audio h
 Backups live under Recovery/ghost-community-v2, transient same-filesystem trees under Work/ghost-work-v2, never under discovery roots. The old work tree is removed only after verified activation/host startup and an intact independent backup. Failed candidate trees may be retained in the work namespace for review.
 
 Limit: THREE retained transactions and 512 MiB recovery quota; a new operation refuses at the limit. No automatic deletion of user-containing recovery copies. Only older completed/restored TXs may be explicitly exported using cleanup.sh TX --export /NEW/INDEPENDENT/OUTSIDE-CONTENT --confirm; export bytes are verified before deleting exact self-owned TX/work trees. The newest recovery state and any incomplete/active transaction are protected. Do not delete historical backups without separate approval.
+
+## installer2-rc3 migration note
+
+See LEGACY_MIGRATION.md for exact desktop-predecessor adoption, retained presets,
+recognized ownership manifests and the explicit export checkpoint if an earlier
+aborted attempt occupies one of the three recovery slots. Do not remove that
+packet manually or retry a failed transaction automatically.

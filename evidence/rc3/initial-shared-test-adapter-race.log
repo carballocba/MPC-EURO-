@@ -1,0 +1,39 @@
+test_complete_real_predecessor_install_update_reinstall_uninstall_restore (__main__.Legacy.test_complete_real_predecessor_install_update_reinstall_uninstall_restore) ... FAIL
+test_copy_failure_preserves_real_predecessor (__main__.Legacy.test_copy_failure_preserves_real_predecessor) ... ok
+test_direct_legacy_uninstall_preserves_all52 (__main__.Legacy.test_direct_legacy_uninstall_preserves_all52) ... ok
+test_directory_collisions (__main__.Legacy.test_directory_collisions) ... ok
+test_duplicate_uid_other_path_refuses_before_transaction (__main__.Legacy.test_duplicate_uid_other_path_refuses_before_transaction) ... ok
+test_export_aborted_packet_allows_complete_three_operation_sequence (__main__.Legacy.test_export_aborted_packet_allows_complete_three_operation_sequence) ... ok
+test_fake_ownership_cannot_delete_unknown (__main__.Legacy.test_fake_ownership_cannot_delete_unknown) ... ok
+test_foreign_entry_inside_target_refuses_before_transaction (__main__.Legacy.test_foreign_entry_inside_target_refuses_before_transaction) ... ok
+test_interrupted_install (__main__.Legacy.test_interrupted_install) ... ok
+test_interrupted_uninstall (__main__.Legacy.test_interrupted_uninstall) ... ok
+test_interrupted_update (__main__.Legacy.test_interrupted_update) ... ok
+test_modified_runtime_refuses_before_host_stop (__main__.Legacy.test_modified_runtime_refuses_before_host_stop) ... ok
+test_path_expansion_requires_exact_destination (__main__.Legacy.test_path_expansion_requires_exact_destination) ... ok
+test_registration_failure_recovers_real_predecessor (__main__.Legacy.test_registration_failure_recovers_real_predecessor) ... ok
+test_slow_service_shutdown_rewrite (__main__.Legacy.test_slow_service_shutdown_rewrite) ... ok
+test_three_slot_sequence_requires_retention_checkpoint (__main__.Legacy.test_three_slot_sequence_requires_retention_checkpoint) ... ok
+test_uninstall_then_reinstall_preserves_retained_presets (__main__.Legacy.test_uninstall_then_reinstall_preserves_retained_presets) ... ok
+test_unknown_metadata_fields_not_blessed (__main__.Legacy.test_unknown_metadata_fields_not_blessed) ... ok
+
+======================================================================
+FAIL: test_complete_real_predecessor_install_update_reinstall_uninstall_restore (__main__.Legacy.test_complete_real_predecessor_install_update_reinstall_uninstall_restore)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/SOURCE/tests/installer-hardening/test_legacy_migration.py", line 28, in test_complete_real_predecessor_install_update_reinstall_uninstall_restore
+    self.ok(f.run());first=f.tx();after=h.inventory(f.target);self.assertEqual(pres,self.presets(f));f.check_foreign()
+    ~~~~~~~^^^^^^^^^
+  File "/SOURCE/tests/installer-hardening/test_legacy_migration.py", line 22, in ok
+    def ok(self,r):self.assertEqual(r[0],0,r[1])
+                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+AssertionError: 1 != 0 : ./common.sh: line 7: sha256sum: command not found
+REFUSED: modified runtime collision: Plugin Skins/product_48_296_98_0_select_0_on.png
+REFUSED: installation is not safely adoptable
+2026-10-29T01:49:02Z aborted-before-arm
+
+
+----------------------------------------------------------------------
+Ran 18 tests in 150.844s
+
+FAILED (failures=1)
